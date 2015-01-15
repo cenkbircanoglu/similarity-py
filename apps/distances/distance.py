@@ -3,8 +3,12 @@ __author__ = 'cenk'
 
 class Distance:
     def __init__(self, data):
-        self._data = data
-        self._result = None
+
+        if type(data) is list:
+            self._data = data
+            self._result = None
+        else:
+            raise TypeError("You must initialize array.")
 
     def _algorithm(self):
         raise NotImplementedError("Subclasses should implement this!")
