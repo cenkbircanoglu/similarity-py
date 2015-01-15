@@ -1,7 +1,7 @@
 __author__ = 'cenk'
 
 
-class Distance():
+class Distance:
     def __init__(self, data):
         self._data = data
         self._result = None
