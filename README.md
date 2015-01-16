@@ -25,7 +25,7 @@ Data mining Examples
 
 ##ChessboardDistance
   Data:   [{a, b, c}, {x, y, z}] <br/>
-  Formula:  ![alt tag](https://raw.githubusercontent.com/cenkbircanoglu/clustering/master/images/chessborad_distance.gif)
+  Formula:  ![alt tag](https://raw.githubusercontent.com/cenkbircanoglu/clustering/master/images/chessboard_distance.gif)
 
 ##BrayCurtisDistance
   Data:   [{a, b, c}, {x, y, z}] <br/>
