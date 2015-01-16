@@ -19,6 +19,10 @@ Data mining Examples
   Data:   [{a, b, c}, {x, y, z}] <br/>
   Formula:  ![alt tag](https://raw.githubusercontent.com/cenkbircanoglu/clustering/master/images/squared_euclidean_distance.gif)
 
+##Normalized Squared Euclidean Distance
+  Data:   [{a, b}, {x, y}]
+  Formula:  ![alt tag](https://raw.githubusercontent.com/cenkbircanoglu/clustering/master/images/normalized_squared_euclidean_distance.gif)
+
 
 ##Testing
 
