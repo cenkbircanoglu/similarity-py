@@ -3,19 +3,26 @@ Clustering
 Data mining Examples
 
 ##Norm
+    Norm[{x, y, z}]
+    ![alt tag](http://reference.wolfram.com/language/ref/Files/Norm.en/O_1.gif)
 
-Norm[{a, b, c} - {x, y, z}]
+##Manhattan Distance
+    ManhattanDistance[{a, b, c}, {x, y, z}]
+    ![alt tag](http://reference.wolfram.com/language/ref/Files/ManhattanDistance.en/O_1.gif)
 
 
 ##Euclidean Distance
-EuclideanDistance[{a, b, c}, {x, y, z}]
-    ![alt tag](http://upload.wikimedia.org/math/8/4/9/849f040fd10bb86f7c85eb0bbe3566a4.png)
+    EuclideanDistance[{a, b, c}, {x, y, z}]
+    ![alt tag](http://reference.wolfram.com/language/ref/Files/EuclideanDistance.en/O_1.gif)
 
 ##Squared Euclidean Distance
-EuclideanDistance[{a, b, c}, {x, y, z}]^2
+    SquaredEuclideanDistance[{a, b, c}, {x, y, z}]
+    ![alt tag](http://reference.wolfram.com/language/ref/Files/SquaredEuclideanDistance.en/O_1.gif)
+
 
 ##Testing
 
-```run all tests:
+Run all tests:
+```bash
     $ python -m unittest discover -s tests -p 'test_*.py'
 ```
