@@ -4,7 +4,7 @@ Data mining Examples
 
 ##Norm
     Norm[{x, y, z}]
-    ![alt tag](https://raw.githubusercontent.com/cenkbircanoglu/clustering/master/images/norm.gif)
+    ![demo](https://raw.githubusercontent.com/cenkbircanoglu/clustering/master/images/norm.gif)
 
 ##Manhattan Distance
     ManhattanDistance[{a, b, c}, {x, y, z}]
