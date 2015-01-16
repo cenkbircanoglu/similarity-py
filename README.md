@@ -23,6 +23,9 @@ Data mining Examples
   Data:   [{a, b}, {x, y}] <br/>
   Formula:  ![alt tag](https://raw.githubusercontent.com/cenkbircanoglu/clustering/master/images/normalized_squared_euclidean_distance.gif)
 
+##ChessboardDistance
+  Data:   [{a, b, c}, {x, y, z}] <br/>
+  Formula:  ![alt tag](https://raw.githubusercontent.com/cenkbircanoglu/clustering/master/images/chessborad_distance.gif)
 
 ##Testing
 
