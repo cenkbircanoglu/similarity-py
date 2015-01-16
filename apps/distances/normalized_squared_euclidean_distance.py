@@ -1,3 +1,4 @@
+# coding=utf-8
 import operator
 
 from apps.distances.distance import Distance
@@ -6,6 +7,8 @@ from apps.distances.distance import Distance
 __author__ = 'cenk'
 
 # TODO
+
+##   1/2 * Norm[(u-Mean[u])-(v-Mean[v])] ^2 / (Norm[u-Mean[u]]^2+Norm[v-Mean[v]]^2)
 class NormalizedSquaredEuclideanDistance(Distance):
     def _algorithm(self):
         if len(self._data) == 2:

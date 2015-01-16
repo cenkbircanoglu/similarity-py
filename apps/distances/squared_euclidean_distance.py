@@ -1,3 +1,4 @@
+# coding=utf-8
 import operator
 
 from apps.distances.distance import Distance
