@@ -4,20 +4,20 @@ Data mining Examples
 
 ##Norm
     Norm[{x, y, z}]
-    ![alt tag](http://reference.wolfram.com/language/ref/Files/Norm.en/O_1.gif)
+    ![alt tag](https://raw.githubusercontent.com/cenkbircanoglu/clustering/master/images/norm.gif)
 
 ##Manhattan Distance
     ManhattanDistance[{a, b, c}, {x, y, z}]
-    ![alt tag](http://reference.wolfram.com/language/ref/Files/ManhattanDistance.en/O_1.gif)
+    ![alt tag](https://raw.githubusercontent.com/cenkbircanoglu/clustering/master/images/manhattam_distance.gif)
 
 
 ##Euclidean Distance
     EuclideanDistance[{a, b, c}, {x, y, z}]
-    ![alt tag](http://reference.wolfram.com/language/ref/Files/EuclideanDistance.en/O_1.gif)
+    ![alt tag](https://raw.githubusercontent.com/cenkbircanoglu/clustering/master/images/euclidean_distance.gif)
 
 ##Squared Euclidean Distance
     SquaredEuclideanDistance[{a, b, c}, {x, y, z}]
-    ![alt tag](http://reference.wolfram.com/language/ref/Files/SquaredEuclideanDistance.en/O_1.gif)
+    ![alt tag](https://raw.githubusercontent.com/cenkbircanoglu/clustering/master/images/squared_euclidean_distance.gif)
 
 
 ##Testing
