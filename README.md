@@ -20,7 +20,7 @@ Data mining Examples
   Formula:  ![alt tag](https://raw.githubusercontent.com/cenkbircanoglu/clustering/master/images/squared_euclidean_distance.gif)
 
 ##Normalized Squared Euclidean Distance
-  Data:   [{a, b}, {x, y}]
+  Data:   [{a, b}, {x, y}] <br/>
   Formula:  ![alt tag](https://raw.githubusercontent.com/cenkbircanoglu/clustering/master/images/normalized_squared_euclidean_distance.gif)
 
 
