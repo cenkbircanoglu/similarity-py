@@ -2,7 +2,7 @@ Clustering
 ==========
 Data mining Examples
 
--> ##Distances <-
+<h2 style="vertical-align:middle;">Distances</h2>
 
 ####Numerical Data
 
@@ -54,3 +54,5 @@ Run all tests:
 ```bash
     $ python -m unittest discover -s tests -p '*_test.py'
 ```
+
+
