@@ -6,8 +6,7 @@ Clustering
 
 ####Numerical **Data**
 
-#####Norm
----------
+_#####Norm_
   **Data**:   [{x, y, z}] <br/>
   **Formula**:  ![alt tag](https://raw.githubusercontent.com/cenkbircanoglu/clustering/master/images/norm.gif)
 
