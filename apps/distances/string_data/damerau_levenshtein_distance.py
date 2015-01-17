@@ -16,26 +16,29 @@ class DamerauLevenshteinDistance(Distance):
                 point_b = point_b.lower()
             except:
                 pass
-            if len(point_a) < len(point_b):
-                pointb = point_b
-                pointa = point_a
-                point_a = pointb
-                point_b = pointa
+            d = {}
+            len_a = len(point_a)
+            len_b = len(point_b)
+            for i in xrange(-1, len_a + 1):
+                d[(i, -1)] = i + 1
+            for j in xrange(-1, len_b + 1):
+                d[(-1, j)] = j + 1
 
-            if len(point_b) == 0:
-                return len(point_a)
+            for i in xrange(len_a):
+                for j in xrange(len_b):
+                    if point_a[i] == point_b[j]:
+                        cost = 0
+                    else:
+                        cost = 1
+                    d[(i, j)] = min(
+                        d[(i - 1, j)] + 1,  # deletion
+                        d[(i, j - 1)] + 1,  # insertion
+                        d[(i - 1, j - 1)] + cost,  # substitution
+                    )
+                    if i and j and point_a[i] == point_b[j - 1] and point_a[i - 1] == point_b[j]:
+                        d[(i, j)] = min(d[(i, j)], d[i - 2, j - 2] + cost)  # transposition
 
-            previous_row = range(len(point_b) + 1)
-            for i, c1 in enumerate(point_a):
-                current_row = [i + 1]
-                for j, c2 in enumerate(point_b):
-                    insertions = previous_row[j + 1] + 1
-                    deletions = current_row[j] + 1
-                    substitutions = previous_row[j] + (c1 != c2)
-                    current_row.append(min(insertions, deletions, substitutions))
-                previous_row = current_row
-
-            self._result = previous_row[-1]
+            self._result = d[len_a - 1, len_b - 1]
 
         else:
             raise ArithmeticError("You must enter two array to find squared euclidean distance.")

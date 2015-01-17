@@ -41,13 +41,11 @@ class DamerauLevenshteinDistanceTest(TestCase):
         result = damerau_levenshtein_distance.get_result()
         self.assertEquals(2, result)
 
-        ## TODO
         data = ["ac", "ca"]
         damerau_levenshtein_distance = DamerauLevenshteinDistance(data)
         damerau_levenshtein_distance.process()
         result = damerau_levenshtein_distance.get_result()
-        print "This value must be 1"
-        self.assertEquals(2, result)
+        self.assertEquals(1, result)
 
         data = ["abcde", "ABCDf"]
         damerau_levenshtein_distance = DamerauLevenshteinDistance(data)
