@@ -105,9 +105,25 @@ Data mining Examples
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Data**:   [{a, b, c}, {x, y, z}] <br/>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Explanation**:[u,v] gives the number of elements whose values disagree in u and v.
 
+#####&nbsp;&nbsp;<em>Edit Distance</em>
 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Data**:   [{a, b, c}, {x, y, z}] <br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Explanation**:[u,v] gives the number of one-element deletions, insertions, and substitutions required to transform u to v.
 
+#####&nbsp;&nbsp;<em>Damerau Levenshtein Distance</em>
 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Data**:   [{a, b, c}, {x, y, z}] <br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Explanation**:[u,v] gives the number of one-element deletions, insertions, substitutions, and transpositions required to transform u to v.
+
+#####&nbsp;&nbsp;<em>Needleman Wunsch Similarity</em>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Data**:   [{a, b, c}, {x, y, z}] <br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Explanation**:[u,v] finds an optimal global alignment between the elements of u and v, and returns the number of one-element matches.
+
+#####&nbsp;&nbsp;<em>Smith Waterman Similarity</em>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Data**:   [{a, b, c}, {x, y, z}] <br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Explanation**:[u,v] finds an optimal local alignment between the elements of u and v, and returns the number of one-element matches.
 
 
 ##Testing
