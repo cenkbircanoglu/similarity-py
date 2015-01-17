@@ -2,7 +2,7 @@
 from unittest import TestCase
 import math
 
-from apps.distances.norm import Norm
+from apps.algorithms.norm import Norm
 
 
 __author__ = 'cenk'

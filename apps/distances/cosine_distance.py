@@ -2,7 +2,7 @@
 import operator
 
 from apps.distances.distance import Distance
-from apps.distances.norm import Norm
+from apps.algorithms.norm import Norm
 
 
 __author__ = 'cenk'
