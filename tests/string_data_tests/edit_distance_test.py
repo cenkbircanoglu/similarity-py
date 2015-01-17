@@ -7,17 +7,18 @@ from tests import test_logger
 
 __author__ = 'cenk'
 
-## TODO
+
 class EditDistanceTest(TestCase):
     def test_algorithm(self):
         test_logger.debug("EditDistanceTest - test_algorithm Starts")
-        data = ["123", "246"]
+
+        data = ["bccbbcb", "ccbbccb"]
         edit_distance = EditDistance(data)
         edit_distance.process()
         result = edit_distance.get_result()
-        self.assertEquals(3, result)
+        self.assertEquals(2, result)
 
-        data = ["bccbbcb", "ccbbccb"]
+        data = ["123", "246"]
         edit_distance = EditDistance(data)
         edit_distance.process()
         result = edit_distance.get_result()
@@ -27,7 +28,7 @@ class EditDistanceTest(TestCase):
         edit_distance = EditDistance(data)
         edit_distance.process()
         result = edit_distance.get_result()
-        self.assertEquals(3, result)
+        self.assertEquals(2, result)
 
         data = ["123", "123"]
         edit_distance = EditDistance(data)
@@ -63,12 +64,11 @@ class EditDistanceTest(TestCase):
         edit_distance = EditDistance(data)
         edit_distance.process()
         result = edit_distance.get_result()
-        self.assertEquals(3, result)
+        self.assertEquals(2, result)
 
         data = [[3], [4, 5, 6]]
         edit_distance = EditDistance(data)
-        with self.assertRaises(ArithmeticError) as context:
-            edit_distance.process()
-        self.assertEqual('You cant calculate hamming distance of array has different sizes.',
-                         context.exception.message)
+        edit_distance.process()
+        result = edit_distance.get_result()
+        self.assertEquals(3, result)
         test_logger.debug("EditDistanceTest - test_algorithm Ends")
