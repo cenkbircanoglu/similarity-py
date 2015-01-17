@@ -11,53 +11,29 @@ __author__ = 'cenk'
 class DiceDissimilarityTest(TestCase):
     def test_algorithm(self):
         test_logger.debug("DiceDissimilarityTest - test_algorithm Starts")
-        data = ["10110", "11011"]
+        data = [[1, 0, 1, 1, 0], [1, 1, 0, 1, 1]]
         dice_dissimilarity = DiceDissimilarity(data)
         dice_dissimilarity.process()
         result = dice_dissimilarity.get_result()
         self.assertEquals(3.0 / 7, result)
 
-        data = ["123", "123"]
+        data = [[True, False, True], [True, True, False]]
+        dice_dissimilarity = DiceDissimilarity(data)
+        dice_dissimilarity.process()
+        result = dice_dissimilarity.get_result()
+        self.assertEquals(0.5, result)
+
+        data = [[1, 1, 1, 1], [1, 1, 1, 1]]
         dice_dissimilarity = DiceDissimilarity(data)
         dice_dissimilarity.process()
         result = dice_dissimilarity.get_result()
         self.assertEquals(0.0, result)
 
-        data = ["abcde", "ABCDE"]
+        data = [[0, 0, 0, 0], [1, 1, 1, 1]]
         dice_dissimilarity = DiceDissimilarity(data)
         dice_dissimilarity.process()
         result = dice_dissimilarity.get_result()
-        self.assertEquals(0, result)
-
-        data = ["abcde", "ABCDf"]
-        dice_dissimilarity = DiceDissimilarity(data)
-        dice_dissimilarity.process()
-        result = dice_dissimilarity.get_result()
-        self.assertEquals(0.1111111111111111, result)
-
-        data = [[3], [4]]
-        dice_dissimilarity = DiceDissimilarity(data)
-        dice_dissimilarity.process()
-        result = dice_dissimilarity.get_result()
-        self.assertEquals(1, result)
-
-        data = [["a"], [4]]
-        dice_dissimilarity = DiceDissimilarity(data)
-        dice_dissimilarity.process()
-        result = dice_dissimilarity.get_result()
-        self.assertEquals(1, result)
-
-        data = ["10011", "00101"]
-        dice_dissimilarity = DiceDissimilarity(data)
-        dice_dissimilarity.process()
-        result = dice_dissimilarity.get_result()
-        self.assertEquals(0.42857142857142855, result)
-
-        data = [(True, False, True), (True, True, False)]
-        dice_dissimilarity = DiceDissimilarity(data)
-        dice_dissimilarity.process()
-        result = dice_dissimilarity.get_result()
-        self.assertEquals(0.5, result)
+        self.assertEquals(1.0, result)
 
         data = [[3], [4, 5, 6]]
         dice_dissimilarity = DiceDissimilarity(data)

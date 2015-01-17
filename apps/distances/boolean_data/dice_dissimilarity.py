@@ -14,17 +14,16 @@ class DiceDissimilarity(Distance):
             point_b = self._data[1]
 
             if len(point_a) == len(point_b):
+                and_list = map(operator.and_, point_b, point_a)
+                xor_list = map(operator.xor, point_b, point_a)
+                nor_list = [not i for i in map(operator.or_, point_b, point_a)]
+
+                and_count = and_list.count(True)
+                xor_count = xor_list.count(True)
+                nor_count = nor_list.count(True)
 
                 try:
-                    point_a = point_a.lower()
-                    point_b = point_b.lower()
-                except:
-                    pass
-                equality_list = map(operator.eq, point_b, point_a)
-                falses = equality_list.count(False)
-                trues = equality_list.count(True)
-                try:
-                    self._result = (float(falses) / (falses + (2 * trues)))
+                    self._result = (float(xor_count) / (xor_count + (2 * and_count)))
                 except:
                     raise
             else:

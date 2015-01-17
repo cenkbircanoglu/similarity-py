@@ -69,37 +69,37 @@ Data mining Examples
 #####&nbsp;&nbsp;<em>Jaccard Dissimilarity</em>
 
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Data**:   [{True,False,True}, {True,True,False}] <br/>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Explanation**:[u,v] is equivalent to , where  is the number of corresponding pairs of elements in u and v respectively equal to i and j.
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Explanation**:[u,v] is equivalent to  ![alt tag](https://raw.githubusercontent.com/cenkbircanoglu/clustering/master/images/jaccard_dissimilarity.png), where n<sub>ij</sub> is the number of corresponding pairs of elements in u and v respectively equal to i and j.
 
 #####&nbsp;&nbsp;<em>Matching Dissimilarity</em>
 
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Data**:   [{True,False,True}, {True,True,False}] <br/>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Explanation**:[u,v]  is equivalent to (n10+n01)/Length[u], where  is the number of corresponding pairs of elements in u and v respectively equal to i and j.
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Explanation**:[u,v]  is equivalent to (n10+n01)/Length[u], where n<sub>ij</sub> is the number of corresponding pairs of elements in u and v respectively equal to i and j.
 
 #####&nbsp;&nbsp;<em>Dice Dissimilarity</em>
 
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Data**:   [{True,False,True}, {True,True,False}] <br/>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Explanation**:[u,v] is equivalent to , where  is the number of corresponding pairs of elements in u and v respectively equal to i and j.
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Explanation**:[u,v] is equivalent to  ![alt tag](https://raw.githubusercontent.com/cenkbircanoglu/clustering/master/images/dice_dissimilarity.gif), where n<sub>ij</sub> is the number of corresponding pairs of elements in u and v respectively equal to i and j.
 
 #####&nbsp;&nbsp;<em>Rogers Tanimoto Dissimilarity</em>
 
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Data**:   [{True,False,True}, {True,True,False}] <br/>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Explanation**:[u,v] is equivalent to , where  is the number of corresponding pairs of elements in u and v respectively equal to  and .
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Explanation**:[u,v] is equivalent to  ![alt tag](https://raw.githubusercontent.com/cenkbircanoglu/clustering/master/images/rogers_tanimoto_dissimilarity.png), where n<sub>ij</sub> is the number of corresponding pairs of elements in u and v respectively equal to i and j.
 
 #####&nbsp;&nbsp;<em>Russell Rao Dissimilarity</em>
 
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Data**:   [{True,False,True}, {True,True,False}] <br/>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Explanation**:[u,v] is equivalent to (n10+n01+n00)/Length[u], where  is the number of corresponding pairs of elements in u and v respectively equal to i and j.
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Explanation**:[u,v] is equivalent to (n10+n01+n00)/Length[u], where n<sub>ij</sub> is the number of corresponding pairs of elements in u and v respectively equal to i and j.
 
 #####&nbsp;&nbsp;<em>Sokal Sneath Dissimilarity</em>
 
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Data**:   [{True,False,True}, {True,True,False}] <br/>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Explanation**:[u,v] is equivalent to , where  is the number of corresponding pairs of elements in  and  respectively equal to  and .
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Explanation**:[u,v] is equivalent to  ![alt tag](https://raw.githubusercontent.com/cenkbircanoglu/clustering/master/images/sokal_sneath_dissimilarity.png), where n<sub>ij</sub> is the number of corresponding pairs of elements in  and  respectively equal to i and j.
 
 #####&nbsp;&nbsp;<em>Yule Dissimilarity</em>
 
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Data**:   [{True,False,True}, {True,True,False}] <br/>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Explanation**:[u,v] is equivalent to , where  is the number of corresponding pairs of elements in  and  respectively equal to  and .
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Explanation**:[u,v] is equivalent to  ![alt tag](https://raw.githubusercontent.com/cenkbircanoglu/clustering/master/images/yule_dissimilarity.png), where n<sub>ij</sub> is the number of corresponding pairs of elements in  and  respectively equal to i and j.
 
 
 

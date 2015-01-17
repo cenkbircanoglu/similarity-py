@@ -1,9 +1,7 @@
 # coding=utf-8
+import operator
 
 from apps.distances.distance import Distance
-from apps.mathematical_set.finitive_set import FinitiveMatSet
-from apps.mathematical_set.math_function import MathFunction
-from apps.mathematical_set.two_math_set_comparence import TwoMathSetComparence
 
 
 __author__ = 'cenk'
@@ -16,21 +14,16 @@ class JaccardDissimilarity(Distance):
             point_b = self._data[1]
 
             if len(point_a) == len(point_b):
+                and_list = map(operator.and_, point_b, point_a)
+                xor_list = map(operator.xor, point_b, point_a)
+                nor_list = [not i for i in map(operator.or_, point_b, point_a)]
+
+                and_count = and_list.count(True)
+                xor_count = xor_list.count(True)
+                nor_count = nor_list.count(True)
 
                 try:
-                    point_a = point_a.lower()
-                    point_b = point_b.lower()
-                except:
-                    pass
-                set_a = FinitiveMatSet(MathFunction(lambda x: x), point_a, 'A')
-                set_b = FinitiveMatSet(MathFunction(lambda x: x), point_b, 'B')
-
-                two_math_set_comparence = TwoMathSetComparence()
-                intersection_size = two_math_set_comparence.intersection_size([set_a, set_b])
-                association_size = two_math_set_comparence.association_size([set_a, set_b])
-
-                try:
-                    self._result = (float(intersection_size) / association_size)
+                    self._result = (float(xor_count) / (xor_count + and_count))
                 except:
                     raise
             else:

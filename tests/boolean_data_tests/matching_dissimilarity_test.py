@@ -11,52 +11,34 @@ __author__ = 'cenk'
 class MatchingDissimilarityTest(TestCase):
     def test_algorithm(self):
         test_logger.debug("MatchingDissimilarityTest - test_algorithm Starts")
-        data = ["123", "246"]
-        matching_dissimilarity = MatchingDissimilarity(data)
-        matching_dissimilarity.process()
-        result = matching_dissimilarity.get_result()
+        data = [[1, 0, 1, 1, 0], [1, 1, 0, 1, 1]]
+        dice_dissimilarity = MatchingDissimilarity(data)
+        dice_dissimilarity.process()
+        result = dice_dissimilarity.get_result()
+        self.assertEquals(0.6, result)
+
+        data = [[True, False, True], [True, True, False]]
+        dice_dissimilarity = MatchingDissimilarity(data)
+        dice_dissimilarity.process()
+        result = dice_dissimilarity.get_result()
+        self.assertEquals(0.6666666666666666, result)
+
+        data = [[1, 1, 1, 1], [1, 1, 1, 1]]
+        dice_dissimilarity = MatchingDissimilarity(data)
+        dice_dissimilarity.process()
+        result = dice_dissimilarity.get_result()
         self.assertEquals(0.0, result)
 
-        data = ["123", "123"]
-        matching_dissimilarity = MatchingDissimilarity(data)
-        matching_dissimilarity.process()
-        result = matching_dissimilarity.get_result()
-        self.assertEquals(1, result)
-
-        data = ["abcde", "ABCDE"]
-        matching_dissimilarity = MatchingDissimilarity(data)
-        matching_dissimilarity.process()
-        result = matching_dissimilarity.get_result()
-        self.assertEquals(1, result)
-
-        data = ["abcde", "ABCDf"]
-        matching_dissimilarity = MatchingDissimilarity(data)
-        matching_dissimilarity.process()
-        result = matching_dissimilarity.get_result()
-        self.assertEquals(0.8, result)
-
-        data = [[3], [4]]
-        matching_dissimilarity = MatchingDissimilarity(data)
-        matching_dissimilarity.process()
-        result = matching_dissimilarity.get_result()
-        self.assertEquals(0, result)
-
-        data = [["a"], [4]]
-        matching_dissimilarity = MatchingDissimilarity(data)
-        matching_dissimilarity.process()
-        result = matching_dissimilarity.get_result()
-        self.assertEquals(0, result)
-
-        data = ["10011", "00101"]
-        matching_dissimilarity = MatchingDissimilarity(data)
-        matching_dissimilarity.process()
-        result = matching_dissimilarity.get_result()
-        self.assertEquals(0.4, result)
+        data = [[0, 0, 0, 0], [1, 1, 1, 1]]
+        dice_dissimilarity = MatchingDissimilarity(data)
+        dice_dissimilarity.process()
+        result = dice_dissimilarity.get_result()
+        self.assertEquals(1.0, result)
 
         data = [[3], [4, 5, 6]]
-        matching_dissimilarity = MatchingDissimilarity(data)
+        dice_dissimilarity = MatchingDissimilarity(data)
         with self.assertRaises(ArithmeticError) as context:
-            matching_dissimilarity.process()
+            dice_dissimilarity.process()
         self.assertEqual('You cant calculate matching dissimilarity of array has different sizes.',
                          context.exception.message)
         test_logger.debug("MatchingDissimilarityTest - test_algorithm Ends")
