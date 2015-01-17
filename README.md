@@ -31,6 +31,11 @@ Data mining Examples
   Data:   [{a, b, c}, {x, y, z}] <br/>
   Formula:  ![alt tag](https://raw.githubusercontent.com/cenkbircanoglu/clustering/master/images/bray_curtis_distance.gif)
 
+##CanberraDistance
+  Data:   [{a, b, c}, {x, y, z}]
+  Formula:  ![alt tag](https://raw.githubusercontent.com/cenkbircanoglu/clustering/master/images/canberra_distance.gif)
+
+
 ##Testing
 
 Run all tests:
