@@ -1,3 +1,7 @@
+#centered {
+    vertical-align:middle;
+}
+
 Clustering
 ==========
 **Data** mining Examples
@@ -6,7 +10,7 @@ Clustering
 
 ####Numerical **Data**
 
-#####<em>Norm<em>
+#####<em id="centered">Norm<em>
   **Data**:   [{x, y, z}] <br/>
   **Formula**:  ![alt tag](https://raw.githubusercontent.com/cenkbircanoglu/clustering/master/images/norm.gif)
 
