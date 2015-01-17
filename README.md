@@ -96,7 +96,10 @@ Data mining Examples
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Data**:   [{a,b,c}, {c,b,a}] <br/>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Explanation**:[u,v] is equivalent to , where  is the number of corresponding pairs of elements in  and  respectively equal to  and .
 
+#####&nbsp;&nbsp;<em>Yule Dissimilarity</em>
 
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Data**:   [{a,b,c}, {c,b,a}] <br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Explanation**:[u,v] is equivalent to , where  is the number of corresponding pairs of elements in  and  respectively equal to  and .
 
 
 
