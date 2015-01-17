@@ -6,54 +6,54 @@ Clustering
 
 ####Numerical **Data**
 
-#####Norm
----------
+#####<em>Norm</em>
+
   **Data**:   [{x, y, z}] <br/>
   **Formula**:  ![alt tag](https://raw.githubusercontent.com/cenkbircanoglu/clustering/master/images/norm.gif)
 
-#####Manhattan Distance
------------------------
+#####<em>Manhattan Distance</em>
+
   **Data**:   [{a, b, c}, {x, y, z}] <br/>
   **Formula**:  ![alt tag](https://raw.githubusercontent.com/cenkbircanoglu/clustering/master/images/manhattan_distance.gif)
 
 
-#####Euclidean Distance
------------------------
+#####<em>Euclidean Distance</em>
+
   **Data**:   [{a, b, c}, {x, y, z}] <br/>
   **Formula**:  ![alt tag](https://raw.githubusercontent.com/cenkbircanoglu/clustering/master/images/euclidean_distance.gif)
 
-#####Squared Euclidean Distance
--------------------------------
+#####<em>Squared Euclidean Distance</em>
+
   **Data**:   [{a, b, c}, {x, y, z}] <br/>
   **Formula**:  ![alt tag](https://raw.githubusercontent.com/cenkbircanoglu/clustering/master/images/squared_euclidean_distance.gif)
 
-#####Normalized Squared Euclidean Distance
-------------------------------------------
+#####<em>Normalized Squared Euclidean Distance</em>
+
   **Data**:   [{a, b}, {x, y}] <br/>
   **Formula**:  ![alt tag](https://raw.githubusercontent.com/cenkbircanoglu/clustering/master/images/normalized_squared_euclidean_distance.gif)
 
-#####ChessboardDistance
------------------------
+#####<em>ChessboardDistance</em>
+
   **Data**:   [{a, b, c}, {x, y, z}] <br/>
   **Formula**:  ![alt tag](https://raw.githubusercontent.com/cenkbircanoglu/clustering/master/images/chessboard_distance.gif)
 
-#####BrayCurtisDistance
------------------------
+#####<em>BrayCurtisDistance</em>
+
   **Data**:   [{a, b, c}, {x, y, z}] <br/>
   **Formula**:  ![alt tag](https://raw.githubusercontent.com/cenkbircanoglu/clustering/master/images/bray_curtis_distance.gif)
 
-#####CanberraDistance
----------------------
+#####<em>CanberraDistance</em>
+
   **Data**:   [{a, b, c}, {x, y, z}] <br/>
   **Formula**:  ![alt tag](https://raw.githubusercontent.com/cenkbircanoglu/clustering/master/images/canberra_distance.gif)
 
-#####CosineDistance
--------------------
+#####<em>CosineDistance</em>
+
   **Data**:   [{a, b, c}, {x, y, z}] <br/>
   **Formula**:  ![alt tag](https://raw.githubusercontent.com/cenkbircanoglu/clustering/master/images/cosine_distance.gif)
 
-#####CorrelationDistance
-------------------------
+#####<em>CorrelationDistance</em>
+
   **Data**:   [{a, b, c}, {x, y, z}] <br/>
   **Formula**:  ![alt tag](https://raw.githubusercontent.com/cenkbircanoglu/clustering/master/images/correlation_distance.gif)
 
