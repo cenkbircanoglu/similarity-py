@@ -40,6 +40,6 @@ class YuleDissimilarityTest(TestCase):
         dice_dissimilarity = YuleDissimilarity(data)
         with self.assertRaises(ArithmeticError) as context:
             dice_dissimilarity.process()
-        self.assertEqual('You cant calculate hamming distance of array has different sizes.',
+        self.assertEqual('You cant calculate Yule dissimilarity of array has different sizes.',
                          context.exception.message)
         test_logger.debug("YuleDissimilarityTest - test_algorithm Ends")
