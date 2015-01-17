@@ -4,7 +4,7 @@ Data mining Examples
 
 ###Distances
 
-&nbsp;####Numerical Data
+####&nbsp;Numerical Data
 
 
 #####&nbsp;&nbsp;<em>Norm</em>
