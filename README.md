@@ -1,4 +1,4 @@
-<link href="https://raw.githubusercontent.com/cenkbircanoglu/clustering/master/styles/markdown.css" type="text/css" rel="stylesheet"></link>
+<link href="http://kevinburke.bitbucket.org/markdowncss/markdown.css" rel="stylesheet"></link>
 
 Clustering
 ==========
