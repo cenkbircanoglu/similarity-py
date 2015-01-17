@@ -9,7 +9,7 @@ from apps.mathematical_set.two_math_set_comparence import TwoMathSetComparence
 __author__ = 'cenk'
 
 
-class JaccardDistance(Distance):
+class JaccardDissimilarity(Distance):
     def _algorithm(self):
         if len(self._data) == 2:
             point_a = self._data[0]
