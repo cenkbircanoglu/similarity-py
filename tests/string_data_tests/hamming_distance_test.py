@@ -17,6 +17,18 @@ class HammingDistanceTest(TestCase):
         result = hamming_distance.get_result()
         self.assertEquals(3, result)
 
+        data = ["bccbbcb", "ccbbccb"]
+        hamming_distance = HammingDistance(data)
+        hamming_distance.process()
+        result = hamming_distance.get_result()
+        self.assertEquals(3, result)
+
+        data = [[0, 1, 1, 0, 0, 1, 0], [1, 1, 0, 0, 1, 1, 0]]
+        hamming_distance = HammingDistance(data)
+        hamming_distance.process()
+        result = hamming_distance.get_result()
+        self.assertEquals(3, result)
+
         data = ["123", "123"]
         hamming_distance = HammingDistance(data)
         hamming_distance.process()
