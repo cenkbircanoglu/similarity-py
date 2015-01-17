@@ -59,6 +59,15 @@ Data mining Examples
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Formula**:  ![alt tag](https://raw.githubusercontent.com/cenkbircanoglu/clustering/master/images/correlation_distance.gif)
 
 
+####&nbsp;Boolean Data
+
+#####&nbsp;&nbsp;<em>HammingDistance</em>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Data**:   ["abc", "cba"] <br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Explanation**:  gives the number of elements whose values disagree in u and v.
+
+
+
 ##Testing
 
 
