@@ -1,7 +1,7 @@
 # coding=utf-8
 from unittest import TestCase
 
-from apps.distances.boolean_data.hamming_distance import HammingDistance
+from apps.distances.string_data.hamming_distance import HammingDistance
 from tests import test_logger
 
 

@@ -61,10 +61,6 @@ Data mining Examples
 
 ####&nbsp;Boolean Data
 
-#####&nbsp;&nbsp;<em>Hamming Distance</em>
-
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Data**:   [{True,False,True}, {True,True,False}] <br/>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Explanation**:[u,v] gives the number of elements whose values disagree in u and v.
 
 #####&nbsp;&nbsp;<em>Jaccard Dissimilarity</em>
 
@@ -101,7 +97,13 @@ Data mining Examples
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Data**:   [{True,False,True}, {True,True,False}] <br/>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Explanation**:[u,v] is equivalent to  ![alt tag](https://raw.githubusercontent.com/cenkbircanoglu/clustering/master/images/yule_dissimilarity.png), where n<sub>ij</sub> is the number of corresponding pairs of elements in  and  respectively equal to i and j.
 
+####&nbsp;String Data
 
+
+#####&nbsp;&nbsp;<em>Hamming Distance</em>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Data**:   [{a, b, c}, {x, y, z}] <br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Explanation**:[u,v] gives the number of elements whose values disagree in u and v.
 
 
 
