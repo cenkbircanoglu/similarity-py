@@ -1,3 +1,5 @@
+<link href="https://raw.githubusercontent.com/cenkbircanoglu/clustering/master/styles/markdown.css" rel="stylesheet"></link>
+
 Clustering
 ==========
 Data mining Examples
