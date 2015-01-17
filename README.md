@@ -57,7 +57,7 @@ Data mining Examples
 #####<em>CorrelationDistance</em>
 
   &nbsp;&nbsp;&nbsp;**Data**:   [{a, b, c}, {x, y, z}] <br/>
-  &nbsp;&nbsp;&nbsp;**Formula**:  ![alt tag](https://raw.githubusercontent.com/cenkbircanoglu/clustering/master/images/correlation_distance.gif)
+  &nbsp;&nbsp;&nbsp;&Tab;**Formula**:  ![alt tag](https://raw.githubusercontent.com/cenkbircanoglu/clustering/master/images/correlation_distance.gif)
 
 
 ##Testing
