@@ -74,12 +74,12 @@ Data mining Examples
 #####&nbsp;&nbsp;<em>Matching Dissimilarity</em>
 
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Data**:   [{True,False,True}, {True,True,False}] <br/>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Explanation**:[u,v]  is equivalent to (n10+n01)/Length[u], where n<sub>ij</sub> is the number of corresponding pairs of elements in u and v respectively equal to i and j.
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Explanation**:[u,v]  is equivalent to (n<sub>10</sub>+n<sub>01</sub>)/Length[u], where n<sub>ij</sub> is the number of corresponding pairs of elements in u and v respectively equal to i and j.
 
 #####&nbsp;&nbsp;<em>Dice Dissimilarity</em>
 
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Data**:   [{True,False,True}, {True,True,False}] <br/>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Explanation**:[u,v] is equivalent to  ![alt tag](https://raw.githubusercontent.com/cenkbircanoglu/clustering/master/images/dice_dissimilarity.gif), where n<sub>ij</sub> is the number of corresponding pairs of elements in u and v respectively equal to i and j.
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Explanation**:[u,v] is equivalent to  ![alt tag](https://raw.githubusercontent.com/cenkbircanoglu/clustering/master/images/dice_dissimilarity.png), where n<sub>ij</sub> is the number of corresponding pairs of elements in u and v respectively equal to i and j.
 
 #####&nbsp;&nbsp;<em>Rogers Tanimoto Dissimilarity</em>
 
@@ -89,7 +89,7 @@ Data mining Examples
 #####&nbsp;&nbsp;<em>Russell Rao Dissimilarity</em>
 
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Data**:   [{True,False,True}, {True,True,False}] <br/>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Explanation**:[u,v] is equivalent to (n10+n01+n00)/Length[u], where n<sub>ij</sub> is the number of corresponding pairs of elements in u and v respectively equal to i and j.
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Explanation**:[u,v] is equivalent to (n<sub>10</sub>+n<sub>01</sub>+n<sub>00</sub>)/Length[u], where n<sub>ij</sub> is the number of corresponding pairs of elements in u and v respectively equal to i and j.
 
 #####&nbsp;&nbsp;<em>Sokal Sneath Dissimilarity</em>
 
