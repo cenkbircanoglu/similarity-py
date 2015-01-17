@@ -91,6 +91,13 @@ Data mining Examples
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Data**:   [{a,b,c}, {c,b,a}] <br/>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Explanation**:[u,v] is equivalent to (n10+n01+n00)/Length[u], where  is the number of corresponding pairs of elements in u and v respectively equal to i and j.
 
+#####&nbsp;&nbsp;<em>Sokal Sneath Dissimilarity</em>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Data**:   [{a,b,c}, {c,b,a}] <br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Explanation**:[u,v] is equivalent to , where  is the number of corresponding pairs of elements in  and  respectively equal to  and .
+
+
+
 
 
 
