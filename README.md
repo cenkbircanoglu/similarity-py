@@ -66,6 +66,13 @@ Data mining Examples
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Data**:   ["abc", "cba"] <br/>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Explanation**:  gives the number of elements whose values disagree in u and v.
 
+#####&nbsp;&nbsp;<em>Jaccard Distance</em>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Data**:   [{a,b,c}, {c,b,a}] <br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Explanation**: is defined as the size of the intersection divided by the size of the union of the sample sets.
+
+
+
 
 
 ##Testing
