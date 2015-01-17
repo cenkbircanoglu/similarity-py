@@ -71,6 +71,12 @@ Data mining Examples
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Data**:   [{a,b,c}, {c,b,a}] <br/>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Explanation**: is defined as the size of the intersection divided by the size of the union of the sample sets.
 
+#####&nbsp;&nbsp;<em>Matching Dissimilarity</em>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Data**:   [{a,b,c}, {c,b,a}] <br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Explanation**:[u,v]  is equivalent to (n10+n01)/Length[u], where  is the number of corresponding pairs of elements in u and v respectively equal to i and j.
+
+
 
 
 
