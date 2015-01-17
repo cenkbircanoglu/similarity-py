@@ -21,19 +21,20 @@ class NormalizedSquaredEuclideanDistanceTest(TestCase):
         normalized_squared_euclidean_distance = NormalizedSquaredEuclideanDistance(data)
         normalized_squared_euclidean_distance.process()
         result = normalized_squared_euclidean_distance.get_result()
-        self.assertEquals(0.025, result)
+        self.assertEquals(0.001589630279970944, result)
 
         data = [(3, 1), (4, 1)]
         normalized_squared_euclidean_distance = NormalizedSquaredEuclideanDistance(data)
         normalized_squared_euclidean_distance.process()
         result = normalized_squared_euclidean_distance.get_result()
-        self.assertEquals(0.07142857142857142, result)
+        self.assertEquals(0.038461538461538464, result)
 
         data = [[3], [4]]
         normalized_squared_euclidean_distance = NormalizedSquaredEuclideanDistance(data)
-        normalized_squared_euclidean_distance.process()
-        result = normalized_squared_euclidean_distance.get_result()
-        self.assertEquals(0.0, result)
+        with self.assertRaises(ZeroDivisionError) as context:
+            normalized_squared_euclidean_distance.process()
+        self.assertEqual('float division by zero',
+                         context.exception.message)
 
         data = [[3], [4, 5, 6]]
         normalized_squared_euclidean_distance = NormalizedSquaredEuclideanDistance(data)

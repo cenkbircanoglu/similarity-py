@@ -32,13 +32,21 @@ Data mining Examples
   Formula:  ![alt tag](https://raw.githubusercontent.com/cenkbircanoglu/clustering/master/images/bray_curtis_distance.gif)
 
 ##CanberraDistance
-  Data:   [{a, b, c}, {x, y, z}]
+  Data:   [{a, b, c}, {x, y, z}] <br/>
   Formula:  ![alt tag](https://raw.githubusercontent.com/cenkbircanoglu/clustering/master/images/canberra_distance.gif)
+
+##CosineDistance
+  Data:   [{a, b, c}, {x, y, z}] <br/>
+  Formula:  ![alt tag](https://raw.githubusercontent.com/cenkbircanoglu/clustering/master/images/cosine_distance.gif)
+
+##CorrelationDistance
+  Data:   [{a, b, c}, {x, y, z}] <br/>
+  Formula:  ![alt tag](https://raw.githubusercontent.com/cenkbircanoglu/clustering/master/images/correlation_distance.gif)
 
 
 ##Testing
 
 Run all tests:
 ```bash
-    $ python -m unittest discover -s tests -p 'test_*.py'
+    $ python -m unittest discover -s tests -p 'test_*'.py
 ```
