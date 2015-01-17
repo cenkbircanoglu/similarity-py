@@ -2,6 +2,7 @@
 from unittest import TestCase
 
 from apps.distances.boolean_data.dice_dissimilarity import DiceDissimilarity
+from tests import test_logger
 
 
 __author__ = 'cenk'
@@ -9,6 +10,7 @@ __author__ = 'cenk'
 
 class DiceDissimilarityTest(TestCase):
     def test_algorithm(self):
+        test_logger.debug("DiceDissimilarityTest - test_algorithm Starts")
         data = ["10110", "11011"]
         dice_dissimilarity = DiceDissimilarity(data)
         dice_dissimilarity.process()
@@ -63,3 +65,4 @@ class DiceDissimilarityTest(TestCase):
             dice_dissimilarity.process()
         self.assertEqual('You cant calculate hamming distance of array has different sizes.',
                          context.exception.message)
+        test_logger.debug("DiceDissimilarityTest - test_algorithm Ends")

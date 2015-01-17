@@ -2,6 +2,7 @@
 from unittest import TestCase
 
 from apps.distances.numerical_data.manhattan_distance import ManhattanDistance
+from tests import test_logger
 
 
 __author__ = 'cenk'
@@ -9,6 +10,7 @@ __author__ = 'cenk'
 
 class ManhattanDistanceTest(TestCase):
     def test_algorithm(self):
+        test_logger.debug("ManhattanDistanceTest - test_algorithm Starts")
         data = [(1, 2, 3, 4), (1, 2, 3, 6)]
         manhattan_distance = ManhattanDistance(data)
         manhattan_distance.process()
@@ -52,3 +54,4 @@ class ManhattanDistanceTest(TestCase):
             manhattan_distance.process()
         self.assertEqual("unsupported operand type(s) for -: 'int' and 'str'",
                          context.exception.message)
+        test_logger.debug("ManhattanDistanceTest - test_algorithm Ends")

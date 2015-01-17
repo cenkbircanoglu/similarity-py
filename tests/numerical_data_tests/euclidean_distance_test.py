@@ -2,6 +2,7 @@
 from unittest import TestCase
 
 from apps.distances.numerical_data.euclidean_distance import EuclideanDistance
+from tests import test_logger
 
 
 __author__ = 'cenk'
@@ -9,6 +10,7 @@ __author__ = 'cenk'
 
 class EuclideanDistanceTest(TestCase):
     def test_algorithm(self):
+        test_logger.debug("EuclideanDistanceTest - test_algorithm Starts")
         data = [(1, 2, 3, 4), (1, 2, 3, 6)]
         euclidean_distance = EuclideanDistance(data)
         euclidean_distance.process()
@@ -40,79 +42,80 @@ class EuclideanDistanceTest(TestCase):
             euclidean_distance.process()
         self.assertEqual("unsupported operand type(s) for -: 'int' and 'str'",
                          context.exception.message)
-    #
-    #
-    # def test_stress(self):
-    #
-    #     ## Ten thousand data test
-    #     data = [[], []]
-    #     a = 0
-    #     limit = 1000
-    #     while a < limit:
-    #         data[0].append(random.randint(0, 10000))
-    #         data[1].append(random.randint(0, 10000))
-    #         a += 1
-    #     t0 = time.clock()
-    #
-    #     euclidean_distance = EuclideanDistance(data)
-    #     euclidean_distance.process()
-    #     result = euclidean_distance.get_result()
-    #     print result
-    #     time_delta = time.clock() - t0
-    #     expected_delta = 0.0006
-    #     self.assertTrue(expected_delta > time_delta)
-    #     print time_delta
-    #
-    #     ## One hundred thousand data test
-    #     data = [[], []]
-    #     a = 0
-    #     while a < limit * 100:
-    #         data[0].append(random.randint(0, 10000))
-    #         data[1].append(random.randint(0, 10000))
-    #         a += 1
-    #     t0 = time.clock()
-    #
-    #     euclidean_distance = EuclideanDistance(data)
-    #     euclidean_distance.process()
-    #     result = euclidean_distance.get_result()
-    #     print result
-    #     time_delta = time.clock() - t0
-    #     self.assertTrue(expected_delta * 100 > time_delta)
-    #     print time_delta
-    #
-    #     ## One million data test
-    #     data = [[], []]
-    #     a = 0
-    #     while a < limit * 1000:
-    #         data[0].append(random.randint(0, 10000))
-    #         data[1].append(random.randint(0, 10000))
-    #         a += 1
-    #     t0 = time.clock()
-    #
-    #     euclidean_distance = EuclideanDistance(data)
-    #     euclidean_distance.process()
-    #     result = euclidean_distance.get_result()
-    #     print result
-    #     time_delta = time.clock() - t0
-    #     self.assertTrue(expected_delta * 1000 > time_delta)
-    #     print time_delta
-    #
-    #
-    #     ## Ten million data test
-    #     data = [[], []]
-    #     a = 0
-    #     while a < limit * 10000:
-    #         data[0].append(random.randint(0, 10000))
-    #         data[1].append(random.randint(0, 10000))
-    #         a += 1
-    #     t0 = time.clock()
-    #
-    #     euclidean_distance = EuclideanDistance(data)
-    #     euclidean_distance.process()
-    #     result = euclidean_distance.get_result()
-    #     print result
-    #     time_delta = time.clock() - t0
-    #     print expected_delta * 10000
-    #     self.assertTrue(expected_delta * 10000 > time_delta)
-    #     print time_delta
-    #
+        test_logger.debug("EuclideanDistanceTest - test_algorithm Ends")
+        #
+        #
+        # def test_stress(self):
+        #
+        # ## Ten thousand data test
+        #     data = [[], []]
+        #     a = 0
+        #     limit = 1000
+        #     while a < limit:
+        #         data[0].append(random.randint(0, 10000))
+        #         data[1].append(random.randint(0, 10000))
+        #         a += 1
+        #     t0 = time.clock()
+        #
+        #     euclidean_distance = EuclideanDistance(data)
+        #     euclidean_distance.process()
+        #     result = euclidean_distance.get_result()
+        #     print result
+        #     time_delta = time.clock() - t0
+        #     expected_delta = 0.0006
+        #     self.assertTrue(expected_delta > time_delta)
+        #     print time_delta
+        #
+        #     ## One hundred thousand data test
+        #     data = [[], []]
+        #     a = 0
+        #     while a < limit * 100:
+        #         data[0].append(random.randint(0, 10000))
+        #         data[1].append(random.randint(0, 10000))
+        #         a += 1
+        #     t0 = time.clock()
+        #
+        #     euclidean_distance = EuclideanDistance(data)
+        #     euclidean_distance.process()
+        #     result = euclidean_distance.get_result()
+        #     print result
+        #     time_delta = time.clock() - t0
+        #     self.assertTrue(expected_delta * 100 > time_delta)
+        #     print time_delta
+        #
+        #     ## One million data test
+        #     data = [[], []]
+        #     a = 0
+        #     while a < limit * 1000:
+        #         data[0].append(random.randint(0, 10000))
+        #         data[1].append(random.randint(0, 10000))
+        #         a += 1
+        #     t0 = time.clock()
+        #
+        #     euclidean_distance = EuclideanDistance(data)
+        #     euclidean_distance.process()
+        #     result = euclidean_distance.get_result()
+        #     print result
+        #     time_delta = time.clock() - t0
+        #     self.assertTrue(expected_delta * 1000 > time_delta)
+        #     print time_delta
+        #
+        #
+        #     ## Ten million data test
+        #     data = [[], []]
+        #     a = 0
+        #     while a < limit * 10000:
+        #         data[0].append(random.randint(0, 10000))
+        #         data[1].append(random.randint(0, 10000))
+        #         a += 1
+        #     t0 = time.clock()
+        #
+        #     euclidean_distance = EuclideanDistance(data)
+        #     euclidean_distance.process()
+        #     result = euclidean_distance.get_result()
+        #     print result
+        #     time_delta = time.clock() - t0
+        #     print expected_delta * 10000
+        #     self.assertTrue(expected_delta * 10000 > time_delta)
+        #     print time_delta
+        #

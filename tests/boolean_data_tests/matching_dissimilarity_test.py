@@ -2,6 +2,7 @@
 from unittest import TestCase
 
 from apps.distances.boolean_data.matching_dissimilarity import MatchingDissimilarity
+from tests import test_logger
 
 
 __author__ = 'cenk'
@@ -9,6 +10,7 @@ __author__ = 'cenk'
 
 class MatchingDissimilarityTest(TestCase):
     def test_algorithm(self):
+        test_logger.debug("MatchingDissimilarityTest - test_algorithm Starts")
         data = ["123", "246"]
         matching_dissimilarity = MatchingDissimilarity(data)
         matching_dissimilarity.process()
@@ -57,3 +59,4 @@ class MatchingDissimilarityTest(TestCase):
             matching_dissimilarity.process()
         self.assertEqual('You cant calculate matching dissimilarity of array has different sizes.',
                          context.exception.message)
+        test_logger.debug("MatchingDissimilarityTest - test_algorithm Ends")

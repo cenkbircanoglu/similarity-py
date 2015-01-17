@@ -2,6 +2,7 @@
 from unittest import TestCase
 
 from apps.distances.numerical_data.canberra_distance import CanberraDistance
+from tests import test_logger
 
 
 __author__ = 'cenk'
@@ -9,6 +10,7 @@ __author__ = 'cenk'
 
 class CanberraDistanceTest(TestCase):
     def test_algorithm(self):
+        test_logger.debug("CanberraDistanceTest - test_algorithm Starts")
         data = [(1, 2, 3), (2, 4, 6)]
         canberra_distance = CanberraDistance(data)
         canberra_distance.process()
@@ -40,3 +42,4 @@ class CanberraDistanceTest(TestCase):
             canberra_distance.process()
         self.assertEqual("unsupported operand type(s) for -: 'int' and 'str'",
                          context.exception.message)
+        test_logger.debug("CanberraDistanceTest - test_algorithm Ends")

@@ -2,6 +2,7 @@
 from unittest import TestCase
 
 from apps.distances.boolean_data.jaccard_dissimilarity import JaccardDissimilarity
+from tests import test_logger
 
 
 __author__ = 'cenk'
@@ -9,6 +10,7 @@ __author__ = 'cenk'
 
 class JaccardDissimilarityTest(TestCase):
     def test_algorithm(self):
+        test_logger.debug("JaccardDissimilarityTest - test_algorithm Starts")
         data = ["123", "246"]
         jaccard_dissimilarity = JaccardDissimilarity(data)
         jaccard_dissimilarity.process()
@@ -57,3 +59,4 @@ class JaccardDissimilarityTest(TestCase):
             jaccard_dissimilarity.process()
         self.assertEqual('You cant calculate hamming distance of array has different sizes.',
                          context.exception.message)
+        test_logger.debug("JaccardDissimilarityTest - test_algorithm Ends")

@@ -2,6 +2,7 @@
 from unittest import TestCase
 
 from apps.distances.numerical_data.correlation_distance import CorrelationDistance
+from tests import test_logger
 
 
 __author__ = 'cenk'
@@ -9,6 +10,7 @@ __author__ = 'cenk'
 
 class CorrelationDistanceTest(TestCase):
     def test_algorithm(self):
+        test_logger.debug("CorrelationDistanceTest - test_algorithm Starts")
         data = [(1, 2, 3), (3, 5, 10)]
         correlation_distance = CorrelationDistance(data)
         correlation_distance.process()
@@ -46,3 +48,4 @@ class CorrelationDistanceTest(TestCase):
             correlation_distance.process()
         self.assertEqual("unsupported operand type(s) for +: 'int' and 'str'",
                          context.exception.message)
+        test_logger.debug("CorrelationDistanceTest - test_algorithm Ends")

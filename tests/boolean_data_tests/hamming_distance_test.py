@@ -2,6 +2,7 @@
 from unittest import TestCase
 
 from apps.distances.boolean_data.hamming_distance import HammingDistance
+from tests import test_logger
 
 
 __author__ = 'cenk'
@@ -9,6 +10,7 @@ __author__ = 'cenk'
 
 class HammingDistanceTest(TestCase):
     def test_algorithm(self):
+        test_logger.debug("HammingDistanceTest - test_algorithm Starts")
         data = ["123", "246"]
         hamming_distance = HammingDistance(data)
         hamming_distance.process()
@@ -57,3 +59,4 @@ class HammingDistanceTest(TestCase):
             hamming_distance.process()
         self.assertEqual('You cant calculate hamming distance of array has different sizes.',
                          context.exception.message)
+        test_logger.debug("HammingDistanceTest - test_algorithm Ends")

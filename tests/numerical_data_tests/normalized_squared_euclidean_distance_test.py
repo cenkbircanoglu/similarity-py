@@ -2,6 +2,7 @@
 from unittest import TestCase
 
 from apps.distances.numerical_data.normalized_squared_euclidean_distance import NormalizedSquaredEuclideanDistance
+from tests import test_logger
 
 
 __author__ = 'cenk'
@@ -9,6 +10,7 @@ __author__ = 'cenk'
 
 class NormalizedSquaredEuclideanDistanceTest(TestCase):
     def test_algorithm(self):
+        test_logger.debug("NormalizedSquaredEuclideanDistanceTest - test_algorithm Starts")
         data = [(1, 2, 3), (3, 5, 10)]
         normalized_squared_euclidean_distance = NormalizedSquaredEuclideanDistance(data)
         normalized_squared_euclidean_distance.process()
@@ -47,3 +49,4 @@ class NormalizedSquaredEuclideanDistanceTest(TestCase):
             normalized_squared_euclidean_distance.process()
         self.assertEqual("unsupported operand type(s) for +: 'int' and 'str'",
                          context.exception.message)
+        test_logger.debug("NormalizedSquaredEuclideanDistanceTest - test_algorithm Ends")

@@ -3,6 +3,7 @@ from unittest import TestCase
 import math
 
 from apps.algorithms.norm import Norm
+from tests import test_logger
 
 
 __author__ = 'cenk'
@@ -10,6 +11,7 @@ __author__ = 'cenk'
 
 class NormTest(TestCase):
     def test_algorithm(self):
+        test_logger.debug("NormTest - test_algorithm Starts")
         data = [1, -2]
         norm = Norm.calculate(data)
         result = math.sqrt(5)
@@ -46,4 +48,4 @@ class NormTest(TestCase):
             norm = Norm.calculate(data)
         self.assertEqual("float() argument must be a string or a number",
                          context.exception.message)
-
+        test_logger.debug("NormTest - test_algorithm Ends")

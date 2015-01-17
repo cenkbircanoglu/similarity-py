@@ -2,6 +2,7 @@
 from unittest import TestCase
 
 from apps.distances.numerical_data.chessboard_distance import ChessBoardDistance
+from tests import test_logger
 
 
 __author__ = 'cenk'
@@ -9,6 +10,7 @@ __author__ = 'cenk'
 
 class ChessBoardDistanceTest(TestCase):
     def test_algorithm(self):
+        test_logger.debug("ChessBoardDistanceTest - test_algorithm Starts")
         data = [(1, 2, 3, 4), (1, 2, 3, 8)]
         euclidean_distance = ChessBoardDistance(data)
         euclidean_distance.process()
@@ -46,3 +48,4 @@ class ChessBoardDistanceTest(TestCase):
             euclidean_distance.process()
         self.assertEqual("unsupported operand type(s) for -: 'int' and 'str'",
                          context.exception.message)
+        test_logger.debug("ChessBoardDistanceTest - test_algorithm Ends")

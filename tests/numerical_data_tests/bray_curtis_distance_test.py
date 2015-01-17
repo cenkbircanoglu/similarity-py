@@ -2,6 +2,7 @@
 from unittest import TestCase
 
 from apps.distances.numerical_data.bray_curtis_distance import BrayCurtisDistance
+from tests import test_logger
 
 
 __author__ = 'cenk'
@@ -9,6 +10,7 @@ __author__ = 'cenk'
 
 class BrayCurtisDistanceTest(TestCase):
     def test_algorithm(self):
+        test_logger.debug("BrayCurtisDistanceTest - test_algorithm Starts")
         data = [(1, 2, 3), (2, 4, 6)]
         bray_curtis_distance = BrayCurtisDistance(data)
         bray_curtis_distance.process()
@@ -43,3 +45,4 @@ class BrayCurtisDistanceTest(TestCase):
             bray_curtis_distance.process()
         self.assertEqual("unsupported operand type(s) for -: 'int' and 'str'",
                          context.exception.message)
+        test_logger.debug("BrayCurtisDistanceTest - test_algorithm Ends")

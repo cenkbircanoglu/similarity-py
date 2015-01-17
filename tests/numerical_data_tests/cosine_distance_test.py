@@ -2,6 +2,7 @@
 from unittest import TestCase
 
 from apps.distances.numerical_data.cosine_distance import CosineDistance
+from tests import test_logger
 
 
 __author__ = 'cenk'
@@ -9,6 +10,7 @@ __author__ = 'cenk'
 
 class CosineDistanceTest(TestCase):
     def test_algorithm(self):
+        test_logger.debug("CosineDistanceTest - test_algorithm Starts")
         data = [(1, 2, 3), (3, 5, 7)]
         cosine_distance = CosineDistance(data)
         cosine_distance.process()
@@ -52,3 +54,4 @@ class CosineDistanceTest(TestCase):
             cosine_distance.process()
         self.assertEqual("unsupported operand type(s) for +: 'int' and 'str'",
                          context.exception.message)
+        test_logger.debug("CosineDistanceTest - test_algorithm Ends")
