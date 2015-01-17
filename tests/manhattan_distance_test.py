@@ -1,7 +1,7 @@
 # coding=utf-8
 from unittest import TestCase
 
-from apps.distances.manhattan_distance import ManhattanDistance
+from apps.distances.numerical_data.manhattan_distance import ManhattanDistance
 
 
 __author__ = 'cenk'

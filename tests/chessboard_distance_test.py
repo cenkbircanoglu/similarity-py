@@ -1,9 +1,7 @@
 # coding=utf-8
-import random
 from unittest import TestCase
-import time
 
-from apps.distances.chessboard_distance import ChessBoardDistance
+from apps.distances.numerical_data.chessboard_distance import ChessBoardDistance
 
 
 __author__ = 'cenk'

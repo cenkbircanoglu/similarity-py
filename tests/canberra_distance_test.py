@@ -1,7 +1,7 @@
 # coding=utf-8
 from unittest import TestCase
 
-from apps.distances.canberra_distance import CanberraDistance
+from apps.distances.numerical_data.canberra_distance import CanberraDistance
 
 
 __author__ = 'cenk'

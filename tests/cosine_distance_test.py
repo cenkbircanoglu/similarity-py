@@ -1,9 +1,7 @@
 # coding=utf-8
-import random
 from unittest import TestCase
-import time
 
-from apps.distances.cosine_distance import CosineDistance
+from apps.distances.numerical_data.cosine_distance import CosineDistance
 
 
 __author__ = 'cenk'

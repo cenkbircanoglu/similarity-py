@@ -1,7 +1,7 @@
 # coding=utf-8
 from unittest import TestCase
 
-from apps.distances.correlation_distance import CorrelationDistance
+from apps.distances.numerical_data.correlation_distance import CorrelationDistance
 
 
 __author__ = 'cenk'

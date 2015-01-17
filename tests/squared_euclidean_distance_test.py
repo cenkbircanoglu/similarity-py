@@ -1,9 +1,7 @@
 # coding=utf-8
-import random
 from unittest import TestCase
-import time
 
-from apps.distances.squared_euclidean_distance import SquaredEuclideanDistance
+from apps.distances.numerical_data.squared_euclidean_distance import SquaredEuclideanDistance
 
 
 __author__ = 'cenk'

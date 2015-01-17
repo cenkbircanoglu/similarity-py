@@ -1,7 +1,7 @@
 # coding=utf-8
 from unittest import TestCase
 
-from apps.distances.bray_curtis_distance import BrayCurtisDistance
+from apps.distances.numerical_data.bray_curtis_distance import BrayCurtisDistance
 
 
 __author__ = 'cenk'
