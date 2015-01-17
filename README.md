@@ -81,6 +81,12 @@ Data mining Examples
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Data**:   [{a,b,c}, {c,b,a}] <br/>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Explanation**:[u,v] is equivalent to , where  is the number of corresponding pairs of elements in u and v respectively equal to i and j.
 
+#####&nbsp;&nbsp;<em>Rogers Tanimoto Dissimilarity</em>
+
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Data**:   [{a,b,c}, {c,b,a}] <br/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Explanation**:[u,v] is equivalent to , where  is the number of corresponding pairs of elements in u and v respectively equal to  and .
+
+
 
 
 
