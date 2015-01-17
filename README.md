@@ -1,10 +1,8 @@
-<link href="http://kevinburke.bitbucket.org/markdowncss/markdown.css" rel="stylesheet"></link>
-
 Clustering
 ==========
 Data mining Examples
 
-<h2 class="centered">Distances</h2>
+##Distances
 
 ####Numerical Data
 
