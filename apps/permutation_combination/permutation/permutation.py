@@ -1,4 +1,4 @@
-from permutation_combination.factorial import Factorial
+from apps.permutation_combination.factorial import Factorial
 
 __author__ = 'cenk'
 

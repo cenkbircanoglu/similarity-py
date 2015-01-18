@@ -1,5 +1,5 @@
-from permutation_combination.factorial import Factorial
-from permutation_combination.permutation.permutation import Permutation
+from apps.permutation_combination.factorial import Factorial
+from apps.permutation_combination.permutation.permutation import Permutation
 
 __author__ = 'cenk'
 
