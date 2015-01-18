@@ -18,7 +18,7 @@ class FindNearest:
     def process(self):
         try:
             distances = [self._distance_algorithm.calculate([self._point, x]) for x in self._data]
-            self._distance = min(distances)
+            self._distance = self._distance_algorithm.min_max(distances)
             self._result = self._data[distances.index(self._distance)]
         except:
             raise
