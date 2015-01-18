@@ -44,4 +44,4 @@ class DamerauLevenshteinDistance(SimilarityMeasure):
             self._result = d[len_a - 1, len_b - 1]
 
         else:
-            raise ArithmeticError("You must enter two array to find squared euclidean distance.")
+            raise ArithmeticError("You must enter two array to find Demerau Levenshtein distance.")

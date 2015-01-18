@@ -33,7 +33,7 @@ class EuclideanDistanceTest(TestCase):
         euclidean_distance = EuclideanDistance(data)
         with self.assertRaises(ArithmeticError) as context:
             euclidean_distance.process()
-        self.assertEqual('You cant calculate euclidean distance of array has different sizes.',
+        self.assertEqual('You cant calculate Euclidean distance of array has different sizes.',
                          context.exception.message)
 
         data = [["a"], [4]]
@@ -42,6 +42,14 @@ class EuclideanDistanceTest(TestCase):
             euclidean_distance.process()
         self.assertEqual("unsupported operand type(s) for -: 'int' and 'str'",
                          context.exception.message)
+
+        data = []
+        euclidean_distance = EuclideanDistance(data)
+        with self.assertRaises(ArithmeticError) as context:
+            euclidean_distance.process()
+        self.assertEqual('You must enter two array to find Euclidean distance.',
+                         context.exception.message)
+
         test_logger.debug("EuclideanDistanceTest - test_algorithm Ends")
         #
         #

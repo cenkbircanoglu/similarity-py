@@ -18,6 +18,13 @@ class MedianTest(TestCase):
         self.assertEquals(3, median.calculate(data_list))
         data_list = [1, 2, 3, 4]
         self.assertEquals(2, median.calculate(data_list))
+
+        data_list = []
+        with self.assertRaises(IndexError) as context:
+            median.calculate(data_list)
+        self.assertEqual("list index out of range",
+                         context.exception.message)
+
         test_logger.debug("MedianTest - test_algorithm_with_list Ends")
 
     def test_algorithm_with_tuple(self):

@@ -41,4 +41,18 @@ class JaccardDissimilarityTest(TestCase):
             jaccard_dissimilarity.process()
         self.assertEqual('You cant calculate hamming distance of array has different sizes.',
                          context.exception.message)
+
+        data = [[0, 0, 0, 0], [0, 0, 0, 0]]
+        jaccard_dissimilarity = JaccardDissimilarity(data)
+        with self.assertRaises(ArithmeticError) as context:
+            jaccard_dissimilarity.process()
+        self.assertEqual('float division by zero',
+                         context.exception.message)
+
+        data = []
+        jaccard_dissimilarity = JaccardDissimilarity(data)
+        with self.assertRaises(ArithmeticError) as context:
+            jaccard_dissimilarity.process()
+        self.assertEqual('You must enter two array to find squared euclidean distance.',
+                         context.exception.message)
         test_logger.debug("JaccardDissimilarityTest - test_algorithm Ends")

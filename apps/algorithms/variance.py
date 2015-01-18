@@ -31,4 +31,4 @@ class Variance:
             result = sum_of_powers / (self._n - 1)
             return round(result, 4)
         except:
-            print ""
+            raise

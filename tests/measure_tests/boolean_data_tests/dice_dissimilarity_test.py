@@ -39,6 +39,21 @@ class DiceDissimilarityTest(TestCase):
         dice_dissimilarity = DiceDissimilarity(data)
         with self.assertRaises(ArithmeticError) as context:
             dice_dissimilarity.process()
-        self.assertEqual('You cant calculate hamming distance of array has different sizes.',
+        self.assertEqual('You cant calculate dice dissimilarity of array has different sizes.',
                          context.exception.message)
+
+        data = [[0, 0, 0, 0], [0, 0, 0, 0]]
+        dice_dissimilarity = DiceDissimilarity(data)
+        with self.assertRaises(ArithmeticError) as context:
+            dice_dissimilarity.process()
+        self.assertEqual('float division by zero',
+                         context.exception.message)
+
+        data = []
+        dice_dissimilarity = DiceDissimilarity(data)
+        with self.assertRaises(ArithmeticError) as context:
+            dice_dissimilarity.process()
+        self.assertEqual('You must enter two array to find squared euclidean distance.',
+                         context.exception.message)
+
         test_logger.debug("DiceDissimilarityTest - test_algorithm Ends")

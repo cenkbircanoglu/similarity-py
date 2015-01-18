@@ -40,7 +40,7 @@ class NormalizedSquaredEuclideanDistanceTest(TestCase):
         normalized_squared_euclidean_distance = NormalizedSquaredEuclideanDistance(data)
         with self.assertRaises(ArithmeticError) as context:
             normalized_squared_euclidean_distance.process()
-        self.assertEqual('You cant calculate euclidean distance of array has different sizes.',
+        self.assertEqual('You cant calculate Normalized Squared Euclidean distance of array has different sizes.',
                          context.exception.message)
 
         data = [["a"], [4]]
@@ -48,5 +48,12 @@ class NormalizedSquaredEuclideanDistanceTest(TestCase):
         with self.assertRaises(TypeError) as context:
             normalized_squared_euclidean_distance.process()
         self.assertEqual("unsupported operand type(s) for +: 'int' and 'str'",
+                         context.exception.message)
+
+        data = []
+        normalized_squared_euclidean_distance = NormalizedSquaredEuclideanDistance(data)
+        with self.assertRaises(ArithmeticError) as context:
+            normalized_squared_euclidean_distance.process()
+        self.assertEqual('You must enter two array to find Normalized Squared Euclidean distance.',
                          context.exception.message)
         test_logger.debug("NormalizedSquaredEuclideanDistanceTest - test_algorithm Ends")

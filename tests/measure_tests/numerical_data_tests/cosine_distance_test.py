@@ -45,7 +45,7 @@ class CosineDistanceTest(TestCase):
         cosine_distance = CosineDistance(data)
         with self.assertRaises(ArithmeticError) as context:
             cosine_distance.process()
-        self.assertEqual('You cant calculate euclidean distance of array has different sizes.',
+        self.assertEqual('You cant calculate Cosine distance of array has different sizes.',
                          context.exception.message)
 
         data = [["a"], [4]]
@@ -54,4 +54,12 @@ class CosineDistanceTest(TestCase):
             cosine_distance.process()
         self.assertEqual("unsupported operand type(s) for +: 'int' and 'str'",
                          context.exception.message)
+
+        data = []
+        cosine_distance = CosineDistance(data)
+        with self.assertRaises(ArithmeticError) as context:
+            cosine_distance.process()
+        self.assertEqual('You must enter two array to find Cosine distance.',
+                         context.exception.message)
+
         test_logger.debug("CosineDistanceTest - test_algorithm Ends")

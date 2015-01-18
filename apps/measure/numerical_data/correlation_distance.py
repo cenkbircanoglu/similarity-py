@@ -34,7 +34,7 @@ class CorrelationDistance(SimilarityMeasure):
                     raise
 
             else:
-                raise ArithmeticError("You cant calculate euclidean distance of array has different sizes.")
+                raise ArithmeticError("You cant calculate Correlation distance of array has different sizes.")
 
         else:
-            raise ArithmeticError("You must enter two array to find squared euclidean distance.")
+            raise ArithmeticError("You must enter two array to find Correlation distance.")

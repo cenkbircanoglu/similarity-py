@@ -25,9 +25,6 @@ class SimilarityMeasure:
     def process(self):
         self._algorithm()
 
-    def clear_data(self):
-        pass
-
     def get_result(self):
         return self._result
 

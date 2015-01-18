@@ -2,7 +2,6 @@
 from unittest import TestCase
 
 from apps.measure.boolean_data.yule_dissimilarity import YuleDissimilarity
-
 from tests import test_logger
 
 
@@ -41,5 +40,11 @@ class YuleDissimilarityTest(TestCase):
         with self.assertRaises(ArithmeticError) as context:
             yule_dissimilarity.process()
         self.assertEqual('You cant calculate Yule dissimilarity of array has different sizes.',
+                         context.exception.message)
+        data = []
+        yule_dissimilarity = YuleDissimilarity(data)
+        with self.assertRaises(ArithmeticError) as context:
+            yule_dissimilarity.process()
+        self.assertEqual('You must enter two array to find squared euclidean distance.',
                          context.exception.message)
         test_logger.debug("YuleDissimilarityTest - test_algorithm Ends")

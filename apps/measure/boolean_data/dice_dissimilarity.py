@@ -28,7 +28,7 @@ class DiceDissimilarity(SimilarityMeasure):
                 except:
                     raise
             else:
-                raise ArithmeticError("You cant calculate hamming distance of array has different sizes.")
+                raise ArithmeticError("You cant calculate dice dissimilarity of array has different sizes.")
 
         else:
             raise ArithmeticError("You must enter two array to find squared euclidean distance.")

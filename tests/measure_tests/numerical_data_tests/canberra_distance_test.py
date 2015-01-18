@@ -33,7 +33,7 @@ class CanberraDistanceTest(TestCase):
         canberra_distance = CanberraDistance(data)
         with self.assertRaises(ArithmeticError) as context:
             canberra_distance.process()
-        self.assertEqual('You cant calculate euclidean distance of array has different sizes.',
+        self.assertEqual('You cant calculate Canberra distance of array has different sizes.',
                          context.exception.message)
 
         data = [["a"], [4]]
@@ -42,4 +42,12 @@ class CanberraDistanceTest(TestCase):
             canberra_distance.process()
         self.assertEqual("unsupported operand type(s) for -: 'int' and 'str'",
                          context.exception.message)
+
+        data = []
+        canberra_distance = CanberraDistance(data)
+        with self.assertRaises(ArithmeticError) as context:
+            canberra_distance.process()
+        self.assertEqual('You must enter two array to find squared Canberra distance.',
+                         context.exception.message)
+
         test_logger.debug("CanberraDistanceTest - test_algorithm Ends")

@@ -28,14 +28,12 @@ class YuleDissimilarity(SimilarityMeasure):
                 nor_count = nor_list.count(True)
                 true_false_count = true_false.count(True)
                 false_true_count = false_true.count(True)
-                try:
-                    if float(true_false_count * false_true_count) == 0:
-                        self._result = 0.0
-                    else:
-                        self._result = ((2 * float(true_false_count * false_true_count)) / (
-                            (nor_count * and_count) + (true_false_count * false_true_count)))
-                except:
-                    raise
+                if float(true_false_count * false_true_count) == 0:
+                    self._result = 0.0
+                else:
+                    self._result = ((2 * float(true_false_count * false_true_count)) / (
+                        (nor_count * and_count) + (true_false_count * false_true_count)))
+
             else:
                 raise ArithmeticError("You cant calculate Yule dissimilarity of array has different sizes.")
 

@@ -17,14 +17,11 @@ class FindNearest:
         return self._result
 
     def process(self):
-        try:
-            distances = [self._distance_algorithm.calculate([self._point, x]) for x in self._data]
-            self._distance = self._distance_algorithm.min_max(distances, self.k)
-            self._result = []
-            if len(self._distance) == 1:
-                self._result = self._data[distances.index(self._distance[0])]
-            else:
-                for i in self._distance:
-                    self._result.append(self._data[distances.index(i)])
-        except:
-            raise
+        distances = [self._distance_algorithm.calculate([self._point, x]) for x in self._data]
+        self._distance = self._distance_algorithm.min_max(distances, self.k)
+        self._result = []
+        if len(self._distance) == 1:
+            self._result = self._data[distances.index(self._distance[0])]
+        else:
+            for i in self._distance:
+                self._result.append(self._data[distances.index(i)])

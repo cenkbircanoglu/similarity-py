@@ -71,4 +71,12 @@ class EditDistanceTest(TestCase):
         edit_distance.process()
         result = edit_distance.get_result()
         self.assertEquals(3, result)
+
+        data = []
+        edit_distance = EditDistance(data)
+        with self.assertRaises(ArithmeticError) as context:
+            edit_distance.process()
+        self.assertEqual('You must enter two array to find Edit distance.',
+                         context.exception.message)
+
         test_logger.debug("EditDistanceTest - test_algorithm Ends")

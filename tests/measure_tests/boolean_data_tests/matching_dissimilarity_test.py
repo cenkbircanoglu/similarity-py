@@ -41,4 +41,18 @@ class MatchingDissimilarityTest(TestCase):
             matching_dissimilarity.process()
         self.assertEqual('You cant calculate matching dissimilarity of array has different sizes.',
                          context.exception.message)
+
+        data = [[], []]
+        matching_dissimilarity = MatchingDissimilarity(data)
+        with self.assertRaises(ArithmeticError) as context:
+            matching_dissimilarity.process()
+        self.assertEqual('float division by zero',
+                         context.exception.message)
+
+        data = []
+        matching_dissimilarity = MatchingDissimilarity(data)
+        with self.assertRaises(ArithmeticError) as context:
+            matching_dissimilarity.process()
+        self.assertEqual('You must enter two array to find squared euclidean distance.',
+                         context.exception.message)
         test_logger.debug("MatchingDissimilarityTest - test_algorithm Ends")

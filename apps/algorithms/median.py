@@ -21,4 +21,4 @@ class Median:
         try:
             return float(self.data[index - 1])
         except:
-            print ""
+            raise

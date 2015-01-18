@@ -22,6 +22,6 @@ class ChessBoardDistance(SimilarityMeasure):
                 except:
                     raise
             else:
-                raise ArithmeticError("You cant calculate euclidean distance of array has different sizes.")
+                raise ArithmeticError("You cant calculate Chess Board distance of array has different sizes.")
         else:
-            raise ArithmeticError("You must enter two array to find squared euclidean distance.")
+            raise ArithmeticError("You must enter two array to find Chess Board distance.")

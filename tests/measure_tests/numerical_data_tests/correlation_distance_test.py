@@ -39,7 +39,7 @@ class CorrelationDistanceTest(TestCase):
         correlation_distance = CorrelationDistance(data)
         with self.assertRaises(ArithmeticError) as context:
             correlation_distance.process()
-        self.assertEqual('You cant calculate euclidean distance of array has different sizes.',
+        self.assertEqual('You cant calculate Correlation distance of array has different sizes.',
                          context.exception.message)
 
         data = [["a"], [4]]
@@ -48,4 +48,12 @@ class CorrelationDistanceTest(TestCase):
             correlation_distance.process()
         self.assertEqual("unsupported operand type(s) for +: 'int' and 'str'",
                          context.exception.message)
+
+        data = []
+        correlation_distance = CorrelationDistance(data)
+        with self.assertRaises(ArithmeticError) as context:
+            correlation_distance.process()
+        self.assertEqual('You must enter two array to find Correlation distance.',
+                         context.exception.message)
+
         test_logger.debug("CorrelationDistanceTest - test_algorithm Ends")

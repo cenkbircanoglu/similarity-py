@@ -71,4 +71,11 @@ class DamerauLevenshteinDistanceTest(TestCase):
         result = damerau_levenshtein_distance.get_result()
         self.assertEquals(2, result)
 
+        data = []
+        damerau_levenshtein_distance = DamerauLevenshteinDistance(data)
+        with self.assertRaises(ArithmeticError) as context:
+            damerau_levenshtein_distance.process()
+        self.assertEqual('You must enter two array to find Demerau Levenshtein distance.',
+                         context.exception.message)
+
         test_logger.debug("DamerauLevenshteinDistanceTest - test_algorithm Ends")

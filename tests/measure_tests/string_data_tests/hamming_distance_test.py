@@ -69,6 +69,14 @@ class HammingDistanceTest(TestCase):
         hamming_distance = HammingDistance(data)
         with self.assertRaises(ArithmeticError) as context:
             hamming_distance.process()
-        self.assertEqual('You cant calculate hamming distance of array has different sizes.',
+        self.assertEqual('You cant calculate Hamming distance of array has different sizes.',
                          context.exception.message)
+
+        data = []
+        hamming_distance = HammingDistance(data)
+        with self.assertRaises(ArithmeticError) as context:
+            hamming_distance.process()
+        self.assertEqual('You must enter two array to find Hamming distance.',
+                         context.exception.message)
+
         test_logger.debug("HammingDistanceTest - test_algorithm Ends")

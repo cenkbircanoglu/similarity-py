@@ -41,4 +41,17 @@ class RogersTanimotoDissimilarityTest(TestCase):
             rogers_tanimoto_dissimilarity.process()
         self.assertEqual('You cant calculate Rogers Tanimoto dissimilarity of array has different sizes.',
                          context.exception.message)
+
+        data = [[], []]
+        rogers_tanimoto_dissimilarity = RogersTanimotoDissimilarity(data)
+        with self.assertRaises(ArithmeticError) as context:
+            rogers_tanimoto_dissimilarity.process()
+        self.assertEqual('float division by zero',
+                         context.exception.message)
+        data = []
+        rogers_tanimoto_dissimilarity = RogersTanimotoDissimilarity(data)
+        with self.assertRaises(ArithmeticError) as context:
+            rogers_tanimoto_dissimilarity.process()
+        self.assertEqual('You must enter two array to find squared euclidean distance.',
+                         context.exception.message)
         test_logger.debug("RogersTanimotoDissimilarityTest - test_algorithm Ends")

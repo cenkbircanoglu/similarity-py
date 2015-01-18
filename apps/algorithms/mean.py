@@ -19,7 +19,7 @@ class Mean:
         try:
             return float(sum(self._data)) / len(self._data)
         except ZeroDivisionError:
-            print "integer division or modulo by zero"
+            raise ZeroDivisionError("integer division or modulo by zero")
 
 
 

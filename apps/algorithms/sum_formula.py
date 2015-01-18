@@ -22,7 +22,4 @@ class SumFormula:
         total = 0.0
         for num in self._data:
             total += self.exponential(float(num), self.power)
-        try:
-            return total
-        except:
-            raise
+        return total

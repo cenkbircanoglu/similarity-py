@@ -45,7 +45,7 @@ class ManhattanDistanceTest(TestCase):
         manhattan_distance = ManhattanDistance(data)
         with self.assertRaises(ArithmeticError) as context:
             manhattan_distance.process()
-        self.assertEqual('You cant calculate euclidean distance of array has different sizes.',
+        self.assertEqual('You cant calculate Manhattan distance of array has different sizes.',
                          context.exception.message)
 
         data = [["a"], [4]]
@@ -54,4 +54,12 @@ class ManhattanDistanceTest(TestCase):
             manhattan_distance.process()
         self.assertEqual("unsupported operand type(s) for -: 'int' and 'str'",
                          context.exception.message)
+
+        data = []
+        manhattan_distance = ManhattanDistance(data)
+        with self.assertRaises(ArithmeticError) as context:
+            manhattan_distance.process()
+        self.assertEqual('You must enter two array to find Manhattan distance.',
+                         context.exception.message)
+
         test_logger.debug("ManhattanDistanceTest - test_algorithm Ends")

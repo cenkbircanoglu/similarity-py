@@ -42,4 +42,17 @@ class SokalSneathDissimilarityTest(TestCase):
             sokal_sneath_dissimilarity.process()
         self.assertEqual('You cant calculate Sokal Sneath dissimilarity of array has different sizes.',
                          context.exception.message)
+
+        data = [[], []]
+        sokal_sneath_dissimilarity = SokalSneathDissimilarity(data)
+        with self.assertRaises(ArithmeticError) as context:
+            sokal_sneath_dissimilarity.process()
+        self.assertEqual('float division by zero',
+                         context.exception.message)
+        data = []
+        sokal_sneath_dissimilarity = SokalSneathDissimilarity(data)
+        with self.assertRaises(ArithmeticError) as context:
+            sokal_sneath_dissimilarity.process()
+        self.assertEqual('You must enter two array to find squared euclidean distance.',
+                         context.exception.message)
         test_logger.debug("SokalSneathDissimilarityTest - test_algorithm Ends")

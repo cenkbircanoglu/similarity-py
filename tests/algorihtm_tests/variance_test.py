@@ -18,6 +18,11 @@ class VarianceTest(TestCase):
         self.assertEquals(2.5, variance.calculate(data_list))
         data_list = [1, 2, 3, 4]
         self.assertEquals(1.6667, variance.calculate(data_list))
+        data_list = []
+        with self.assertRaises(ZeroDivisionError) as context:
+            variance.calculate(data_list)
+        self.assertEqual("integer division or modulo by zero",
+                         context.exception.message)
         test_logger.debug("VarianceTest - test_algorithm_with_list Ends")
 
     def test_algorithm_with_tuple(self):

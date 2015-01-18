@@ -36,7 +36,7 @@ class BrayCurtisDistanceTest(TestCase):
         bray_curtis_distance = BrayCurtisDistance(data)
         with self.assertRaises(ArithmeticError) as context:
             bray_curtis_distance.process()
-        self.assertEqual('You cant calculate euclidean distance of array has different sizes.',
+        self.assertEqual('You cant calculate Bray Curtis distance of array has different sizes.',
                          context.exception.message)
 
         data = [["a"], [4]]
@@ -45,4 +45,12 @@ class BrayCurtisDistanceTest(TestCase):
             bray_curtis_distance.process()
         self.assertEqual("unsupported operand type(s) for -: 'int' and 'str'",
                          context.exception.message)
+
+        data = []
+        bray_curtis_distance = BrayCurtisDistance(data)
+        with self.assertRaises(ArithmeticError) as context:
+            bray_curtis_distance.process()
+        self.assertEqual('You must enter two array to find Bray Curtis distance.',
+                         context.exception.message)
+
         test_logger.debug("BrayCurtisDistanceTest - test_algorithm Ends")

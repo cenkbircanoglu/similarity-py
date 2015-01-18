@@ -41,4 +41,17 @@ class RussellRaoDissimilarityTest(TestCase):
             russell_rao_dissimilarity.process()
         self.assertEqual('You cant calculate Russell Rao dissimilarity of array has different sizes.',
                          context.exception.message)
+
+        data = [[], []]
+        russell_rao_dissimilarity = RussellRaoDissimilarity(data)
+        with self.assertRaises(ArithmeticError) as context:
+            russell_rao_dissimilarity.process()
+        self.assertEqual('float division by zero',
+                         context.exception.message)
+        data = []
+        russell_rao_dissimilarity = RussellRaoDissimilarity(data)
+        with self.assertRaises(ArithmeticError) as context:
+            russell_rao_dissimilarity.process()
+        self.assertEqual('You must enter two array to find squared euclidean distance.',
+                         context.exception.message)
         test_logger.debug("RussellRaoDissimilarityTest - test_algorithm Ends")

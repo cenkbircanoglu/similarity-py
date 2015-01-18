@@ -22,13 +22,11 @@ class HammingDistance(SimilarityMeasure):
                     point_b = point_b.lower()
                 except:
                     pass
-                try:
-                    equality_list = map(operator.eq, point_b, point_a)
-                    self._result = equality_list.count(False)
-                except:
-                    raise
+                equality_list = map(operator.eq, point_b, point_a)
+                self._result = equality_list.count(False)
+
             else:
-                raise ArithmeticError("You cant calculate hamming distance of array has different sizes.")
+                raise ArithmeticError("You cant calculate Hamming distance of array has different sizes.")
 
         else:
-            raise ArithmeticError("You must enter two array to find squared euclidean distance.")
+            raise ArithmeticError("You must enter two array to find Hamming distance.")
