@@ -1,4 +1,4 @@
-from aetypes import Enum
+from enum import Enum
 
 __author__ = 'cenk'
 
