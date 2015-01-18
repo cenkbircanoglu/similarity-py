@@ -1,7 +1,7 @@
 from unittest import TestCase
 
 from apps.algorithms.find_nearest import FindNearest
-from apps.distance.boolean_data.dice_dissimilarity import DiceDissimilarity
+from apps.measure.boolean_data.dice_dissimilarity import DiceDissimilarity
 
 from tests import test_logger
 

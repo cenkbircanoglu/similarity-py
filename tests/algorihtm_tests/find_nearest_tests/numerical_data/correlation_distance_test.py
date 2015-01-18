@@ -1,7 +1,7 @@
 from unittest import TestCase
 
 from apps.algorithms.find_nearest import FindNearest
-from apps.distance.numerical_data.correlation_distance import CorrelationDistance
+from apps.measure.numerical_data.correlation_distance import CorrelationDistance
 from tests import test_logger
 
 

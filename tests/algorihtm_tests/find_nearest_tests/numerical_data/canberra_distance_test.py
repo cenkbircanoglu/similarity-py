@@ -1,7 +1,7 @@
 from unittest import TestCase
 
 from apps.algorithms.find_nearest import FindNearest
-from apps.distance.numerical_data.canberra_distance import CanberraDistance
+from apps.measure.numerical_data.canberra_distance import CanberraDistance
 from tests import test_logger
 
 

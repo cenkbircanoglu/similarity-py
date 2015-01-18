@@ -1,7 +1,7 @@
 from unittest import TestCase
 
 from apps.algorithms.find_nearest import FindNearest
-from apps.distance.numerical_data.manhattan_distance import ManhattanDistance
+from apps.measure.numerical_data.manhattan_distance import ManhattanDistance
 from tests import test_logger
 
 

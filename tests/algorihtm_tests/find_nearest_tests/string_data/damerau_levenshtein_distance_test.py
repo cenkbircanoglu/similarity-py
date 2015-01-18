@@ -1,7 +1,7 @@
 from unittest import TestCase
 
 from apps.algorithms.find_nearest import FindNearest
-from apps.distance.string_data.damerau_levenshtein_distance import DamerauLevenshteinDistance
+from apps.measure.string_data.damerau_levenshtein_distance import DamerauLevenshteinDistance
 from tests import test_logger
 
 

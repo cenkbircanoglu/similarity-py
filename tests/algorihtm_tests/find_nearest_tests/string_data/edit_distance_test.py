@@ -1,7 +1,7 @@
 from unittest import TestCase
 
 from apps.algorithms.find_nearest import FindNearest
-from apps.distance.string_data.edit_distance import EditDistance
+from apps.measure.string_data.edit_distance import EditDistance
 from tests import test_logger
 
 

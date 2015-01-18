@@ -1,7 +1,7 @@
 from unittest import TestCase
 
 from apps.algorithms.find_nearest import FindNearest
-from apps.distance.numerical_data.cosine_distance import CosineDistance
+from apps.measure.numerical_data.cosine_distance import CosineDistance
 from tests import test_logger
 
 
