@@ -22,3 +22,9 @@ class Distance:
 
     def get_result(self):
         return self._result
+
+    @classmethod
+    def calculate(cls, data):
+        distance = cls(data)
+        distance.process()
+        return distance.get_result()

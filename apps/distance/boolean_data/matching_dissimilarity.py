@@ -14,13 +14,9 @@ class MatchingDissimilarity(Distance):
             point_b = self._data[1]
 
             if len(point_a) == len(point_b):
-                and_list = map(operator.and_, point_b, point_a)
                 xor_list = map(operator.xor, point_b, point_a)
-                nor_list = [not i for i in map(operator.or_, point_b, point_a)]
 
-                and_count = and_list.count(True)
                 xor_count = xor_list.count(True)
-                nor_count = nor_list.count(True)
 
                 try:
                     self._result = (float(xor_count) / len(point_a))

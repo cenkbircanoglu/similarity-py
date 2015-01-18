@@ -17,14 +17,12 @@ class YuleDissimilarity(Distance):
 
             if len(point_a) == len(point_b):
                 and_list = map(operator.and_, point_b, point_a)
-                xor_list = map(operator.xor, point_b, point_a)
                 nor_list = [not i for i in map(operator.or_, point_b, point_a)]
 
                 and_count = and_list.count(True)
                 true_false = map(custom_operators.true_false, point_a, point_b)
                 false_true = map(custom_operators.false_true, point_a, point_b)
 
-                xor_count = xor_list.count(True)
                 nor_count = nor_list.count(True)
                 true_false_count = true_false.count(True)
                 false_true_count = false_true.count(True)
