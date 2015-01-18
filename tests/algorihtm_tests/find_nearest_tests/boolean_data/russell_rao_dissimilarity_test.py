@@ -31,3 +31,24 @@ class FindNearestTest(TestCase):
         self.assertEquals((1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1), nearest)
 
         test_logger.debug("FindNearestTest - test_russell_rao_dissimilarity Ends")
+
+    def test_russell_rao_dissimilarity_multiple(self):
+        test_logger.debug("FindNearestTest - test_russell_rao_dissimilarity_multiple Starts")
+
+        points = [(1, 0, 1, 0, 1, 0), (1, 0, 1, 0, 1, 1), (1, 0, 1, 1, 1, 0)]
+        point = (1, 0, 0, 0, 0, 0)
+        find_nearest = FindNearest(points, point, RussellRaoDissimilarity, k=2)
+        find_nearest.process()
+        nearest = find_nearest.get_result()
+        self.assertEquals([(1, 0, 1, 0, 1, 0), (1, 0, 1, 0, 1, 0)], nearest)
+
+        points = [(1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1), (1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1),
+                  (0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1)]
+        point = (0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1)
+        find_nearest = FindNearest(points, point, RussellRaoDissimilarity, k=2)
+        find_nearest.process()
+        nearest = find_nearest.get_result()
+        self.assertEquals([(1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1), (1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1)]
+                          , nearest)
+
+        test_logger.debug("FindNearestTest - test_russell_rao_dissimilarity_multiple Ends")

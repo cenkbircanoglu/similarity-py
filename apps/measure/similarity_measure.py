@@ -1,4 +1,6 @@
 # coding=utf-8
+import heapq
+
 from apps.measure.similarity_measure_type import SimilarityMeasureType, SIMILARITY_RATIO, DISTANCE, DISSIMILARITY, \
     DISSIMILARITY_RATIO, DISTANCE_RATIO
 
@@ -36,8 +38,8 @@ class SimilarityMeasure:
         return distance.get_result()
 
     @classmethod
-    def min_max(cls, data):
+    def min_max(cls, data, k=1):
         if cls.similarity_measure_type == DISTANCE or cls.similarity_measure_type == DISSIMILARITY or cls.similarity_measure_type == DISSIMILARITY_RATIO or cls.similarity_measure_type == DISTANCE_RATIO:
-            return min(data)
+            return heapq.nsmallest(k, data)
         elif cls.similarity_measure_type == SIMILARITY_RATIO:
-            return max(data)
+            return heapq.nlargest(k, data)
