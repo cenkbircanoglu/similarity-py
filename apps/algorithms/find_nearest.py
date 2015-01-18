@@ -18,9 +18,6 @@ class FindNearest:
     def process(self):
         try:
             distances = [self._distance_algorithm.calculate([self._point, x]) for x in self._data]
-            # dice_dissimilarity = DiceDissimilarity(data)
-            # dice_dissimilarity.process()
-            # result = dice_dissimilarity.get_result()
             self._distance = min(distances)
             self._result = self._data[distances.index(self._distance)]
         except:
