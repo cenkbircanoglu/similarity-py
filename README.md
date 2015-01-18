@@ -2,7 +2,7 @@ Clustering
 ==========
 Data mining Examples
 
-###Distances
+###Similarity Measures
 
 ####&nbsp;Numerical Data
 
