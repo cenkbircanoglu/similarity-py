@@ -1,4 +1,4 @@
-Clustering
+Clustering [![Build Status](https://travis-ci.org/cenkbircanoglu/clustering.svg?branch=master)](https://travis-ci.org/cenkbircanoglu/clustering)
 ==========
 Data mining Examples
 
