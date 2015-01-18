@@ -134,5 +134,9 @@ Run all tests:
     $ python -m unittest discover -s tests -p '*_test.py'
 ```
 
+Start test with nose and code coverage:
+```bash
+    $ nosetests --with-cov  --cov-report html  --cov  apps tests/
+```
 
 
