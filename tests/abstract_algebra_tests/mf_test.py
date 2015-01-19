@@ -1,7 +1,6 @@
 from unittest import TestCase
 
-from apps.mathematical_set.mf import mf
-
+from apps.abstract_algebra.mf import mf
 from tests import test_logger
 
 
