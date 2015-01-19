@@ -3,7 +3,7 @@ from functools import partial
 from operator import is_not
 
 from apps.mathematical_set.finitive_set import FinitiveMatSet
-from apps.mathematical_set.math_function import MathFunction
+from apps.mathematical_set.mf import MathFunction
 
 
 __author__ = 'cenk'
