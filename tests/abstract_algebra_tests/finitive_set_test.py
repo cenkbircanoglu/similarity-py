@@ -90,7 +90,7 @@ class FinitiveSetTest(TestCase):
         self.assertEquals(expected_size, size)
 
         set7 = FinitiveMatSet(mf(lambda x: x), [1, 1, 1, 2, 5], 'G')
-        set7.process()
+
         elements = set7.get_elements()
         size = set7.get_size()
         name = set7.get_name()

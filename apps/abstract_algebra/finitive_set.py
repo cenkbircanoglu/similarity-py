@@ -7,12 +7,10 @@ class FinitiveMatSet(object):
         self._data = self.__unify_elements(data)
         self._elements = []
         self._name = name
+        self.process()
 
     def get_size(self):
         return len(self._elements)
-
-    def __str__(self):
-        return self._name
 
     def __unify_elements(self, elements):
         unified_elements = []

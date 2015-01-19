@@ -33,7 +33,7 @@ class TwoMathSetComparence(object):
     @classmethod
     def is_subset(self, parent_set, child_set):
         boolean = False
-        if False not in map(lambda x: self.has_value(parent_set.elements, x), child_set.elements):
+        if False not in map(lambda x: self.has_value(parent_set.get_elements(), x), child_set.get_elements()):
             boolean = True
 
         return boolean
