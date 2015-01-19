@@ -1,5 +1,5 @@
 Clustering [![Build Status](https://travis-ci.org/cenkbircanoglu/clustering.svg?branch=master)](https://travis-ci.org/cenkbircanoglu/clustering)  [![Coverage Status](https://coveralls.io/repos/cenkbircanoglu/clustering/badge.svg?branch=master)](https://coveralls.io/r/cenkbircanoglu/clustering?branch=master)
-==========                                                                                                                                        
+===========                                                                                                                
 Data mining Examples
 
 ###Similarity Measures
