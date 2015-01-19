@@ -4,9 +4,10 @@ python:
 # command to install dependencies
 install:
   - pip install -r requirements/dev.txt
-  - pip install coveralls
+  - pip install pytest-cov
+  - pip install python-coveralls
 # command to run tests
 script:
-  nosetests --with-cov  --cov-report html  --cov  apps tests/
+  py.test tests/ -v --cov coveralls --cov-report term-missing
 after_success:
   coveralls
