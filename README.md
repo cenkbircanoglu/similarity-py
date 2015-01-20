@@ -147,7 +147,7 @@ Run all tests:
 
 Start test with nose and code coverage:
 ```bash
-    $ nosetests --with-cov  --cov-report html  --cov  apps tests/
+    $ nosetests --with-cov  --cov-report html  --cov  similarityPy tests/
 ```
 
 
