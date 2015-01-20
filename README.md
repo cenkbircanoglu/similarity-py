@@ -1,8 +1,7 @@
-Clustering [![Build Status](https://travis-ci.org/cenkbircanoglu/clustering.svg?branch=v0.1.0)](https://travis-ci.org/cenkbircanoglu/clustering) [![Coverage Status](https://coveralls.io/repos/cenkbircanoglu/clustering/badge.svg?branch=v0.1.0)](https://coveralls.io/r/cenkbircanoglu/clustering?branch=v0.1.0)
-==========                                                                                                                                        
-Data mining Examples
+Similarity Py [![Build Status](https://travis-ci.org/cenkbircanoglu/similarityPy.svg?branch=master)](https://travis-ci.org/cenkbircanoglu/similarityPy)  [![Coverage Status](https://coveralls.io/repos/cenkbircanoglu/similarityPy/badge.svg?branch=master)](https://coveralls.io/r/cenkbircanoglu/similarityPy?branch=master)
+===================
 
-###Similarity Measures
+###Distance Algorithms
 
 ####&nbsp;Numerical Data
 
