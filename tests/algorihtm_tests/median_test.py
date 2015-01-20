@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from apps.algorithms.median import Median
+from similarityPy.algorithms.median import Median
 from tests import test_logger
 
 

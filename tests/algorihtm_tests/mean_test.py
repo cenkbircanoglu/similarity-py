@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from apps.algorithms.mean import Mean
+from similarityPy.algorithms.mean import Mean
 from tests import test_logger
 
 

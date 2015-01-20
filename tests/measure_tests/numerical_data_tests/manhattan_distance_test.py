@@ -1,7 +1,7 @@
 # coding=utf-8
 from unittest import TestCase
 
-from apps.measure.numerical_data.manhattan_distance import ManhattanDistance
+from similarityPy.measure.numerical_data.manhattan_distance import ManhattanDistance
 from tests import test_logger
 
 

@@ -1,9 +1,9 @@
 # coding=utf-8
 import operator
 
-from apps.measure.similarity_measure import SimilarityMeasure
-from apps.measure.similarity_measure_type import SimilarityMeasureType
-from apps.utils import custom_operators
+from similarityPy.measure.similarity_measure import SimilarityMeasure
+from similarityPy.measure.similarity_measure_type import SimilarityMeasureType
+from similarityPy.utils import custom_operators
 
 
 __author__ = 'cenk'

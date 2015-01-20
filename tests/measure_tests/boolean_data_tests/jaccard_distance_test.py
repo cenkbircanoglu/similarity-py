@@ -1,7 +1,7 @@
 # coding=utf-8
 from unittest import TestCase
 
-from apps.measure.boolean_data.jaccard_dissimilarity import JaccardDissimilarity
+from similarityPy.measure.boolean_data.jaccard_dissimilarity import JaccardDissimilarity
 from tests import test_logger
 
 

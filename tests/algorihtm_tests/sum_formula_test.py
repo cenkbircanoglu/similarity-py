@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from apps.algorithms.sum_formula import SumFormula
+from similarityPy.algorithms.sum_formula import SumFormula
 from tests import test_logger
 
 

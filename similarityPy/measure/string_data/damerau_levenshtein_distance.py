@@ -1,7 +1,7 @@
 # coding=utf-8
 
-from apps.measure.similarity_measure import SimilarityMeasure
-from apps.measure.similarity_measure_type import SimilarityMeasureType
+from similarityPy.measure.similarity_measure import SimilarityMeasure
+from similarityPy.measure.similarity_measure_type import SimilarityMeasureType
 
 
 __author__ = 'cenk'

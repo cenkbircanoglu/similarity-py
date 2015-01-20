@@ -1,7 +1,7 @@
 from unittest import TestCase
 
-from apps.algorithms.find_nearest import FindNearest
-from apps.measure.string_data.hamming_distance import HammingDistance
+from similarityPy.algorithms.find_nearest import FindNearest
+from similarityPy.measure.string_data.hamming_distance import HammingDistance
 from tests import test_logger
 
 

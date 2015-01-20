@@ -1,7 +1,7 @@
 # coding=utf-8
 from unittest import TestCase
 
-from apps.measure.string_data.edit_distance import EditDistance
+from similarityPy.measure.string_data.edit_distance import EditDistance
 from tests import test_logger
 
 

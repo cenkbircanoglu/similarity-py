@@ -1,7 +1,7 @@
 # coding=utf-8
 from unittest import TestCase
 
-from apps.measure.numerical_data.cosine_distance import CosineDistance
+from similarityPy.measure.numerical_data.cosine_distance import CosineDistance
 from tests import test_logger
 
 

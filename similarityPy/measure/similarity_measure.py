@@ -1,7 +1,7 @@
 # coding=utf-8
 import heapq
 
-from apps.measure.similarity_measure_type import SimilarityMeasureType, SIMILARITY_RATIO, DISTANCE, DISSIMILARITY, \
+from similarityPy.measure.similarity_measure_type import SimilarityMeasureType, SIMILARITY_RATIO, DISTANCE, DISSIMILARITY, \
     DISSIMILARITY_RATIO, DISTANCE_RATIO
 
 

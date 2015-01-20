@@ -1,7 +1,7 @@
 # coding=utf-8
 from unittest import TestCase
 
-from apps.measure.numerical_data.canberra_distance import CanberraDistance
+from similarityPy.measure.numerical_data.canberra_distance import CanberraDistance
 from tests import test_logger
 
 

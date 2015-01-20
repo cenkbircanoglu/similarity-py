@@ -1,7 +1,7 @@
 # coding=utf-8
 from unittest import TestCase
 
-from apps.measure.string_data.hamming_distance import HammingDistance
+from similarityPy.measure.string_data.hamming_distance import HammingDistance
 from tests import test_logger
 
 

@@ -1,7 +1,7 @@
 from unittest import TestCase
 
-from apps.algorithms.find_nearest import FindNearest
-from apps.measure.boolean_data.yule_dissimilarity import YuleDissimilarity
+from similarityPy.algorithms.find_nearest import FindNearest
+from similarityPy.measure.boolean_data.yule_dissimilarity import YuleDissimilarity
 from tests import test_logger
 
 

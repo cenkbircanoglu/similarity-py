@@ -2,7 +2,7 @@
 from unittest import TestCase
 import math
 
-from apps.algorithms.norm import Norm
+from similarityPy.algorithms.norm import Norm
 from tests import test_logger
 
 

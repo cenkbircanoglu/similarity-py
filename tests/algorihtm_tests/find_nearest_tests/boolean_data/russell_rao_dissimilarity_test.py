@@ -1,7 +1,7 @@
 from unittest import TestCase
 
-from apps.algorithms.find_nearest import FindNearest
-from apps.measure.boolean_data.russell_rao_dissimilarity import RussellRaoDissimilarity
+from similarityPy.algorithms.find_nearest import FindNearest
+from similarityPy.measure.boolean_data.russell_rao_dissimilarity import RussellRaoDissimilarity
 from tests import test_logger
 
 

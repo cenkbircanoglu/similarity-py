@@ -1,0 +1,4 @@
+include README.md
+recursive-exclude tests *
+recursive-exclude requirements *
+recursive-exclude settings *

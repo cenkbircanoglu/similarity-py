@@ -1,7 +1,7 @@
 from unittest import TestCase
 
-from apps.algorithms.find_nearest import FindNearest
-from apps.measure.boolean_data.sokal_sneath_dissimilarity import SokalSneathDissimilarity
+from similarityPy.algorithms.find_nearest import FindNearest
+from similarityPy.measure.boolean_data.sokal_sneath_dissimilarity import SokalSneathDissimilarity
 from tests import test_logger
 
 

@@ -1,7 +1,7 @@
 # coding=utf-8
 from unittest import TestCase
 
-from apps.measure.boolean_data.matching_dissimilarity import MatchingDissimilarity
+from similarityPy.measure.boolean_data.matching_dissimilarity import MatchingDissimilarity
 from tests import test_logger
 
 

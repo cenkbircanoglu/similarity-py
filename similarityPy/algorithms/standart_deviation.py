@@ -1,6 +1,6 @@
 import math
 
-from apps.algorithms.variance import Variance
+from similarityPy.algorithms.variance import Variance
 
 
 __author__ = 'cenk'

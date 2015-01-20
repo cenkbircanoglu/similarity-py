@@ -1,7 +1,7 @@
 # coding=utf-8
 from unittest import TestCase
 
-from apps.measure.numerical_data.correlation_distance import CorrelationDistance
+from similarityPy.measure.numerical_data.correlation_distance import CorrelationDistance
 from tests import test_logger
 
 

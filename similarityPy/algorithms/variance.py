@@ -1,6 +1,6 @@
-from apps.algorithms.mean import Mean
+from similarityPy.algorithms.mean import Mean
 
-from apps.algorithms.sum_formula import SumFormula
+from similarityPy.algorithms.sum_formula import SumFormula
 
 
 __author__ = 'cenk'

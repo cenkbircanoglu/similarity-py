@@ -1,7 +1,7 @@
 # coding=utf-8
 from unittest import TestCase
 
-from apps.measure.string_data.needleman_wunsch_similarity import NeedlemanWunschSimilarity
+from similarityPy.measure.string_data.needleman_wunsch_similarity import NeedlemanWunschSimilarity
 from tests import test_logger
 
 

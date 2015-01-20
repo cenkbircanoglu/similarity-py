@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from apps.algorithms.variance import Variance
+from similarityPy.algorithms.variance import Variance
 from tests import test_logger
 
 

@@ -1,7 +1,7 @@
 # coding=utf-8
 from unittest import TestCase
 
-from apps.measure.string_data.damerau_levenshtein_distance import DamerauLevenshteinDistance
+from similarityPy.measure.string_data.damerau_levenshtein_distance import DamerauLevenshteinDistance
 from tests import test_logger
 
 

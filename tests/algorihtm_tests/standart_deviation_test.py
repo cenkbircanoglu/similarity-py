@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from apps.algorithms.standart_deviation import StandartDeviation
+from similarityPy.algorithms.standart_deviation import StandartDeviation
 from tests import test_logger
 
 

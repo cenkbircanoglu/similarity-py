@@ -1,7 +1,7 @@
 from unittest import TestCase
 
-from apps.algorithms.find_nearest import FindNearest
-from apps.measure.numerical_data.squared_euclidean_distance import SquaredEuclideanDistance
+from similarityPy.algorithms.find_nearest import FindNearest
+from similarityPy.measure.numerical_data.squared_euclidean_distance import SquaredEuclideanDistance
 from tests import test_logger
 
 
