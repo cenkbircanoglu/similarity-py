@@ -22,7 +22,7 @@ class SimilarityMeasureTest(TestCase):
 
         data = ""
         with self.assertRaises(TypeError) as context:
-            similarity_measure = SimilarityMeasure(data)
+            SimilarityMeasure(data)
         self.assertEqual('You must initialize array.',
                          context.exception.message)
 
