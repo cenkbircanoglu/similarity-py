@@ -56,7 +56,8 @@ target/
 source/*
 .idea
 
-documentation
+docs
+example_google.py
 homework.py
 homework2.py
 needleman.py
