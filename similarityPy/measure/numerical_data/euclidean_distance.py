@@ -1,12 +1,13 @@
 # coding=utf-8
+"""
+Created on 18 January 2014
+@author: Cenk Bircanoglu
+"""
 import math
 import operator
 
 from similarityPy.measure.similarity_measure import SimilarityMeasure
 from similarityPy.measure.similarity_measure_type import SimilarityMeasureType
-
-
-__author__ = 'cenk'
 
 
 class EuclideanDistance(SimilarityMeasure):

@@ -1,18 +1,23 @@
 # coding=utf-8
+"""
+Created on 18 January 2014
+@author: Cenk Bircanoglu
+"""
 import heapq
 
-from similarityPy.measure.similarity_measure_type import SimilarityMeasureType, SIMILARITY_RATIO, DISTANCE, DISSIMILARITY, \
+from similarityPy.measure.similarity_measure_type import SimilarityMeasureType, SIMILARITY_RATIO, DISTANCE, \
+    DISSIMILARITY, \
     DISSIMILARITY_RATIO, DISTANCE_RATIO
-
-
-__author__ = 'cenk'
 
 
 class SimilarityMeasure:
     similarity_measure_type = SimilarityMeasureType.DISTANCE_ABBR
 
     def __init__(self, data):
-
+        """
+        :param data:
+        :return:
+        """
         if type(data) is list:
             self._data = data
             self._result = None
@@ -26,6 +31,9 @@ class SimilarityMeasure:
         self._algorithm()
 
     def get_result(self):
+        """
+        :return:
+        """
         return self._result
 
     @classmethod

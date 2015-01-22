@@ -1,2 +1,5 @@
 # coding=utf-8
-__author__ = 'cenk'
+"""
+Created on 18 January 2014
+@author: Cenk Bircanoglu
+"""

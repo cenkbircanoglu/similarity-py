@@ -1,9 +1,11 @@
+# coding=utf-8
+"""
+Created on 18 January 2014
+@author: Cenk Bircanoglu
+"""
 import math
 
 from similarityPy.algorithms.variance import Variance
-
-
-__author__ = 'cenk'
 
 
 class StandartDeviation:

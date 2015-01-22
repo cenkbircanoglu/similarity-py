@@ -1,9 +1,12 @@
+# coding=utf-8
+"""
+Created on 18 January 2014
+@author: Cenk Bircanoglu
+"""
+
 from similarityPy.algorithms.mean import Mean
 
 from similarityPy.algorithms.sum_formula import SumFormula
-
-
-__author__ = 'cenk'
 
 
 class Variance:

@@ -1,6 +1,10 @@
+# coding=utf-8
+"""
+Created on 18 January 2014
+@author: Cenk Bircanoglu
+"""
 from enum import Enum
 
-__author__ = 'cenk'
 
 DISSIMILARITY_ABBR = 0
 DISTANCE_ABBR = 1

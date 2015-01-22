@@ -1,12 +1,13 @@
 # coding=utf-8
+"""
+Created on 18 January 2014
+@author: Cenk Bircanoglu
+"""
 import operator
 
 from similarityPy.algorithms.mean import Mean
 from similarityPy.measure.similarity_measure import SimilarityMeasure
 from similarityPy.measure.similarity_measure_type import SimilarityMeasureType
-
-
-__author__ = 'cenk'
 
 
 class NormalizedSquaredEuclideanDistance(SimilarityMeasure):
@@ -30,6 +31,7 @@ class NormalizedSquaredEuclideanDistance(SimilarityMeasure):
                 except:
                     raise
             else:
-                raise ArithmeticError("You cant calculate Normalized Squared Euclidean distance of array has different sizes.")
+                raise ArithmeticError(
+                    "You cant calculate Normalized Squared Euclidean distance of array has different sizes.")
         else:
             raise ArithmeticError("You must enter two array to find Normalized Squared Euclidean distance.")
