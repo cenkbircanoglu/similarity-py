@@ -1,4 +1,5 @@
-Similarity Py [![Build Status](https://travis-ci.org/cenkbircanoglu/similarityPy.svg?branch=master)](https://travis-ci.org/cenkbircanoglu/similarityPy)  [![Coverage Status](https://coveralls.io/repos/cenkbircanoglu/similarityPy/badge.svg?branch=master)](https://coveralls.io/r/cenkbircanoglu/similarityPy?branch=master)
+Similarity Py [![Build Status](https://travis-ci.org/cenkbircanoglu/similarityPy.svg?branch=master)](https://travis-ci.org/cenkbircanoglu/similarityPy)  
+[![Coverage Status](https://coveralls.io/repos/cenkbircanoglu/similarityPy/badge.svg?branch=master)](https://coveralls.io/r/cenkbircanoglu/similarityPy?branch=master)
 ===================
 
 
