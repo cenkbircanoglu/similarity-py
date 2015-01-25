@@ -31,7 +31,7 @@ class NormalizedSquaredEuclideanDistanceTest(TestCase):
 
         data = [[3], [4]]
         normalized_squared_euclidean_distance = NormalizedSquaredEuclideanDistance(data)
-        with self.assertRaises(ZeroDivisionError) as context:
+        with self.assertRaises(ArithmeticError) as context:
             normalized_squared_euclidean_distance.process()
         self.assertEqual('float division by zero',
                          context.exception.message)

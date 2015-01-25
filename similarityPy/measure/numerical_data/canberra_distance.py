@@ -22,8 +22,8 @@ class CanberraDistance(SimilarityMeasure):
                     dividend_list = map(operator.sub, point_b, point_a)
                     divider_list = map(operator.add, [float(abs(i)) for i in point_b], [float(abs(i)) for i in point_a])
                     self._result = sum(float(c) for c in map(operator.div, dividend_list, divider_list))
-                except:
-                    raise
+                except ArithmeticError:
+                    raise ArithmeticError("float division by zero")
             else:
                 raise ArithmeticError("You cant calculate Canberra distance of array has different sizes.")
         else:

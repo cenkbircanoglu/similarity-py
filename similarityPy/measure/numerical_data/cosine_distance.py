@@ -23,8 +23,8 @@ class CosineDistance(SimilarityMeasure):
                     dividend = sum(map(operator.mul, point_b, point_a))
                     divider = Norm.calculate(point_b) * Norm.calculate(point_a)
                     self._result = 1 - (dividend / divider)
-                except:
-                    raise
+                except ArithmeticError:
+                    raise ArithmeticError("float division by zero")
             else:
                 raise ArithmeticError("You cant calculate Cosine distance of array has different sizes.")
         else:

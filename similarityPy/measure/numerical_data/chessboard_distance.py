@@ -20,8 +20,8 @@ class ChessBoardDistance(SimilarityMeasure):
             if len(point_a) == len(point_b):
                 try:
                     self._result = max(map(operator.sub, point_b, point_a))
-                except:
-                    raise
+                except ArithmeticError:
+                    raise ArithmeticError("float division by zero")
             else:
                 raise ArithmeticError("You cant calculate Chess Board distance of array has different sizes.")
         else:

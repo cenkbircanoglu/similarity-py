@@ -28,8 +28,8 @@ class NormalizedSquaredEuclideanDistance(SimilarityMeasure):
                         sum((float(c) - mean_a ) ** 2 for c in point_a) + sum(
                             (float(c) - mean_b ) ** 2 for c in point_b))
                     self._result = (dividend / divider)
-                except:
-                    raise
+                except ArithmeticError:
+                    raise ArithmeticError("float division by zero")
             else:
                 raise ArithmeticError(
                     "You cant calculate Normalized Squared Euclidean distance of array has different sizes.")

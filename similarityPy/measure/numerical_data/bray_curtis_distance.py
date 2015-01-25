@@ -22,8 +22,8 @@ class BrayCurtisDistance(SimilarityMeasure):
                     dividend = sum(abs(float(c)) for c in map(operator.sub, point_b, point_a))
                     divider = sum(abs(float(c)) for c in map(operator.add, point_b, point_a))
                     self._result = dividend / divider
-                except:
-                    raise
+                except ArithmeticError:
+                    raise ArithmeticError("float division by zero")
             else:
                 raise ArithmeticError("You cant calculate Bray Curtis distance of array has different sizes.")
 

@@ -20,8 +20,8 @@ class SquaredEuclideanDistance(SimilarityMeasure):
             if len(point_a) == len(point_b):
                 try:
                     self._result = sum(float(c) ** 2 for c in map(operator.sub, point_b, point_a))
-                except:
-                    raise
+                except ArithmeticError:
+                    raise ArithmeticError("float division by zero")
             else:
                 raise ArithmeticError("You cant calculate Squared Euclidean distance of array has different sizes.")
         else:

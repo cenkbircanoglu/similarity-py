@@ -26,8 +26,8 @@ class DiceDissimilarity(SimilarityMeasure):
 
                 try:
                     self._result = (float(xor_count) / (xor_count + (2 * and_count)))
-                except:
-                    raise
+                except ArithmeticError:
+                    raise ArithmeticError("float division by zero")
             else:
                 raise ArithmeticError("You cant calculate dice dissimilarity of array has different sizes.")
 

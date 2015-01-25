@@ -26,8 +26,8 @@ class RussellRaoDissimilarity(SimilarityMeasure):
 
                 try:
                     self._result = ((float(xor_count) + nor_count) / len(point_a))
-                except:
-                    raise
+                except ArithmeticError:
+                    raise ArithmeticError("float division by zero")
             else:
                 raise ArithmeticError("You cant calculate Russell Rao dissimilarity of array has different sizes.")
 

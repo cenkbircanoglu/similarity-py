@@ -26,8 +26,8 @@ class SokalSneathDissimilarity(SimilarityMeasure):
 
                 try:
                     self._result = ((2 * float(xor_count)) / (and_count + (2 * xor_count)))
-                except:
-                    raise
+                except ArithmeticError:
+                    raise ArithmeticError("float division by zero")
             else:
                 raise ArithmeticError("You cant calculate Sokal Sneath dissimilarity of array has different sizes.")
 

@@ -22,8 +22,8 @@ class EuclideanDistance(SimilarityMeasure):
                 try:
                     total = sum(float(c) ** 2 for c in map(operator.sub, point_b, point_a))
                     self._result = math.sqrt(total)
-                except:
-                    raise
+                except ArithmeticError:
+                    raise ArithmeticError("float division by zero")
             else:
                 raise ArithmeticError("You cant calculate Euclidean distance of array has different sizes.")
 

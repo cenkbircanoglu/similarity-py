@@ -26,8 +26,8 @@ class JaccardDissimilarity(SimilarityMeasure):
 
                 try:
                     self._result = (float(xor_count) / (xor_count + and_count))
-                except:
-                    raise
+                except ArithmeticError:
+                    raise ArithmeticError("float division by zero")
             else:
                 raise ArithmeticError("You cant calculate hamming distance of array has different sizes.")
 

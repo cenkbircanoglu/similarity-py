@@ -31,8 +31,8 @@ class CorrelationDistance(SimilarityMeasure):
                     point_a_squared_normalized = sum([(float(c) - mean_a) ** 2 for c in point_a])
                     divider = math.sqrt(point_b_squared_normalized) * math.sqrt(point_a_squared_normalized)
                     self._result = 1 - (dividend / divider)
-                except:
-                    raise
+                except ArithmeticError:
+                    raise ArithmeticError("float division by zero")
 
             else:
                 raise ArithmeticError("You cant calculate Correlation distance of array has different sizes.")
